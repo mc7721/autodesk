@@ -1,0 +1,4168 @@
+{
+    "id": "3e49152870c76a36e7e262683b7eabea",
+    "name": "[BIM360] Docs V2 API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "c3bc8a72079113da58234d0fad6c5ff9",
+            "name": "Get Projects Users",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/users",
+            "description": "Get users of the given company, filter out pending users, default sort by name",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includePending",
+                    "description": "whether inlcude pending user",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includeInactive",
+                    "description": "whether include inactive user",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "company filter. If supply it will only return thoes users belongs to the given company.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "roleId",
+                    "description": "role filter. If supply it will only return thoes users belongs to the given role.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "90d7a0f92c1c5b38d6a8248d0d625702",
+            "name": "Get Projects Folders Folder Urn Parents",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders\/{folder_urn}\/parents",
+            "description": "Get parent folders",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includePermission",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3747bcaf4879cabe011b7695b42003e9",
+            "name": "Post Projects Content Sync",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/content:sync",
+            "description": "Creates a command to fetch contents by top folders from Wip asynchronously",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "da2a69c3fb392bd0bf50397f2c7c351a",
+            "name": "Get Projects Content Sync Commandid",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/content-sync\/{commandId}",
+            "description": "Fetch content cache by command id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "commandId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "ce732198efc94d6ce14cf3e42087fa09",
+            "name": "Post Projects Storage",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/storage",
+            "description": "Creates a storage location in the OSS where data can be uploaded to",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "2a769e808d81e5de7d1b33d342570b0e",
+            "name": "Post Projects Photos",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/photos",
+            "description": "Create a new photo in photo container",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "b9fff0b98210af888c7fe5d73b87b446",
+            "name": "Post Projects Containers",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/containers",
+            "description": "Create a container by type for a project",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "2fd97d0681eb87cdf4f64208852658e6",
+            "name": "Get Projects Project",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}",
+            "description": "Get a project",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "47d0b71b9ecdd32d800efa1a087ac3ff",
+            "name": "Delete Projects Project",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}",
+            "description": "Delete a project",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "150013db3120b84d7985a1c57ba2de65",
+            "name": "Patch Projects Settings",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/settings",
+            "description": "Project-level settings for admins.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "d65a6699f87ee88920d7abc9650532bc",
+            "name": "Post Projects Transmittals",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals",
+            "description": "Create a transmittal",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "22151dfc075f8ba8d85a7a9c4efd6a17",
+            "name": "Get Projects Transmittals",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals",
+            "description": "List transmittals",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sentBy",
+                    "description": "list the transmittals which are sent by the given userId(s). Can supply max up to 10 userIds and seperate them with comma.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "beginCreatedTime",
+                    "description": "list the transmittals which are sent after the given time.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "endCreatedTime",
+                    "description": "list the transmittals which are sent before the given time.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e66307482350de5b01c5ce09c2ab078",
+            "name": "Get Projects Transmittals Transmittalid",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals\/{transmittalId}",
+            "description": "Get a transmittal by id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transmittalId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "add07ac403f4d8b69187f619bfc95dd3",
+            "name": "Get Projects Transmittals Transmittalid Documents",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals\/{transmittalId}\/documents",
+            "description": "List documents in a transmittal",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transmittalId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "aa4b6ea9a55adda885576bb6b65dc12d",
+            "name": "Get Projects Transmittals Transmittalid Recipients",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals\/{transmittalId}\/recipients",
+            "description": "List recipients in a transmittal",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transmittalId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "52077d58735534d110a509c24dc3b88f",
+            "name": "Post Projects Project Versions Version Exports",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions\/{version_id}\/exports",
+            "description": "Exports a single page from an uploaded PDF file into a new PDF file. You can also export the page's markups (annotations) and hyperlinks.\n\nNote that you can only export a page from a PDF file that was uploaded to the Plans folder or to a folder nested under the Plans folder (``attributes.extension.data.actions: SPLIT``). BIM 360 Document Management splits these files into separate pages (sheets) when they are uploaded, and assigns a separate ID to each page. You can identify exportable PDF files",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_id",
+                    "description": "The URL-encoded version ID (URN) of the page to export.\n\nWhen a file is uploaded to BIM 360 Document Management, a corresponding version ID is created for the file.\n\nEvery time the file is saved a new version is created. When a PDF file is uploaded to the Plans folder or to a child of the Plans folder, BIM 360 assigns a separate version ID to each page of the PDF. The user needs to select the version ID that corresponds to the page that he\/she wants to export.\n\nTo export the latest version (``ti",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "5602e1a6ef8d0fb2ab9353d0c0da88f0",
+            "name": "Post Projects Project Versions Batchget",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions:batchGet",
+            "description": "Batch get documents",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "223fecce7622104bb096043581789d6f",
+            "name": "Get Projects Project Versions Version Exports Export",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions\/{version_id}\/exports\/{export_id}",
+            "description": "Returns the status of a PDF export job, as well as data you need to download the exported file when the export is complete.\n\nThe `POST projects\/:project_id\/versions\/:version_id\/exports <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-versions-version_id-exports-POST>`_ endpoint initiates the job, and returns a job ID to be used in this endopint.\n\nTo download the exported PDF file after the job is complete, use `GET :urn\/manifest\/:derivativeurn <\/en\/docs\/model-derivative",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_id",
+                    "description": "The URL-encoded version ID (URN) of the page to export.\n\nWhen a file is uploaded to BIM 360 Document Management, a corresponding version ID is created for the file.\n\nEvery time the file is saved a new version is created. When a PDF file is uploaded to the Plans folder or to a child of the Plans folder, BIM 360 assigns a separate version ID to each page of the PDF. The user needs to select the version ID that corresponds to the page that he\/she wants to export.\n\nTo export the latest version (``ti",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "export_id",
+                    "description": "The ID of the export job; returned when initiating `POST projects\/:project_id\/versions\/:version_id\/exports <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-versions-version_id-exports-POST>`_.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "1734614a4076a1bc59f7ee0bbc182e0c",
+            "name": "Patch Projects Project Versions Version Urn",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions\/{version_urn}",
+            "description": "Update properties of one document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "15ef449e08738f58c5877490a0794f9e",
+            "name": "Post Projects Project Versions Upload",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions:upload",
+            "description": "Upload one document (can be one of [files|items|versions]) <figure role=\"img\" aria-labelledby=\"cow-caption\"> <figcaption id=\"cow-caption\"> GET \/projects\/{project_id}\/commands\/{command_id} response example: <\/figcaption> <pre> { \"data\": { \"type\": \"commands\", \"id\": \"string\", \"attributes\": { \"extension\": { \"type\": \"commands:autodesk.bim360:files.upload\", \"version\": \"1.0.0\", \"schema\": { \"href\": \"https:\/\/developer.api.autodesk.com\/schema\/v1\/versions\/commands:autodesk.bim360:files.upload-1.0.0\" } }, \"",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "2cfbdca3614ac84eb16c1b8719935642",
+            "name": "Post Projects Project Versions Batchupload",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions:batchUpload",
+            "description": "Upload documents (can be one of files|items|versions) <figure role=\"img\" aria-labelledby=\"cow-caption\"> <figcaption id=\"cow-caption\"> GET \/projects\/{project_id}\/commands\/{command_id} response example: <\/figcaption> <pre> { \"data\": { \"type\": \"commands\", \"id\": \"string\", \"attributes\": { \"extension\": { \"type\": \"commands:autodesk.bim360:files.upload\", \"version\": \"1.0.0\", \"schema\": { \"href\": \"https:\/\/developer.api.autodesk.com\/schema\/v1\/versions\/commands:autodesk.bim360:files.upload-1.0.0\" } }, \"statu",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "d336148ce6228d226e701ad854ba15c5",
+            "name": "Patch Projects Project Folders Folder Urn",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_urn}",
+            "description": "Update attributes of one Folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "needPropagate",
+                    "description": "If this change needs to propagate to children.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "77366bb1673d026282f64b6671d20ec6",
+            "name": "Post Projects Versions Forgecopytofolder",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCopyToFolder",
+            "description": "Copy a version to a folder as new item and first version",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "2a243259ce731604701a40fc981ae85d",
+            "name": "Post Projects Versions Forgecopytoitem",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCopyToItem",
+            "description": "Copy a version to a folder as new version on existing item",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "63dbdc1ada8d8a59c0d27f3e540ceab2",
+            "name": "Post Projects Versions Forgepromote",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgePromote",
+            "description": "Promote previous version as latest version on the same item. Use for immutable rename or to restore deleted version",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "7b13303096774119f55434b293cf04eb",
+            "name": "Post Projects Folders Forger Rename",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeRename",
+            "description": "Rename a folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "81f530d56747da402833cd8af40b7129",
+            "name": "Post Projects Folders Forgedelete",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeDelete",
+            "description": "Delete a folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "f5910803b6a9a13d8c017974062b9068",
+            "name": "Post Projects Folders Checkdeleted",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:checkDeleted",
+            "description": "Check deleted statuses for specified folders",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "5c4f17703d3cf7a164a61a26e483a777",
+            "name": "Post Projects Folders Forgecreate",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeCreate",
+            "description": "Create a folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3c2ef3900deefcabf431a292050aa586",
+            "name": "Post Projects Folders Forgemove",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeMove",
+            "description": "Move one folder including its content to a new parent folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3de21db6cac16f7bf85226cc455b5ffc",
+            "name": "Post Projects Versions Forgecreate",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCreate",
+            "description": "Create a new version on an existing item",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "6e4d34b02816421229cb19c55e411cd6",
+            "name": "Post Projects Items Forgecreate",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeCreate",
+            "description": "Create a new item with its first version",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "39beb42a600a97c71a7a6aa0808d80b3",
+            "name": "Post Projects Versions Forgecreateandnoprocess",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCreateAndNoProcess",
+            "description": "Create a new version on an existing item without translation",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "53e2cd2f62576efe51866c83cbe92507",
+            "name": "Post Projects Items Forgecreateandnoprocess",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeCreateAndNoProcess",
+            "description": "Create a new item with its first version without translation",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "adba489aec0f5ef74836d66bf01b7cc6",
+            "name": "Post Projects Folders Forgerestore",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeRestore",
+            "description": "Restore a folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "c347652f213a2e0aa83e59a95c88135e",
+            "name": "Post Projects Versions Batchcopy",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:batchCopy",
+            "description": "Batch copy versioned files",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec1be2d13fb16cb2773c1ec81af69b2b",
+            "name": "Post Projects Items Forgedelete",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeDelete",
+            "description": "delete a document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "0101ac74b81877f8471f74ab6acccf65",
+            "name": "Post Projects Project Items Forgemove",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/items:forgeMove",
+            "description": "move a document to a given folder",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "0c82f2b13ee81486e9d80411ec5453c1",
+            "name": "Post Projects Items Forgelock",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeLock",
+            "description": "lock a document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "cdd66990f477156e3b1ac60dbfdfa6e8",
+            "name": "Post Projects Items Forge Unlock",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeUnlock",
+            "description": "unlock a document",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1141a7e0e1b064d93c7e930c5e05f80",
+            "name": "Get Projects Project Sets",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets",
+            "description": "Sets list",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "048178eec0da59ae68f38902f4fee83f",
+            "name": "Post Projects Project Sets",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets",
+            "description": "Create a Set",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "8ffafd4356f4c7eabda403d3f005c0f9",
+            "name": "Patch Projects Project Sets Set",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}",
+            "description": "Update a Set",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a5b2498b1f5f7bb84c269ed73028a65",
+            "name": "Get Projects Project Sets Set",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}",
+            "description": "Get a Set",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "e1ea8d0e7fef3f11ecdbb1bc69566c30",
+            "name": "Delete Projects Project Sets Set",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}",
+            "description": "Delete a set. Its documents are removed from it but not deleted.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "85812d09c721c750a9636419ed7693a0",
+            "name": "Get Projects Project Sets Set Content",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content",
+            "description": "Get Set content",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_details",
+                    "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "1e3eb403aaddf0dd38dda42b88a624ad",
+            "name": "Post Projects Project Sets Set Content Get",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content\/get",
+            "description": "Get Set content",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_details",
+                    "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "df58aff92ebacd828c409c47f5fb2182",
+            "name": "Post Projects Project Sets Set Content Add",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content\/add",
+            "description": "Add document version to Set",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "55f568eb602fca8234fe26d3532943f0",
+            "name": "Post Projects Project Sets Set Content Remove",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content\/remove",
+            "description": "Remove document versions from a Set",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd6222a7fd3c57bd8a9e89f88f1284e0",
+            "name": "Get Projects Project Sets Current Content",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/current\/content",
+            "description": "Get Set content",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_details",
+                    "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "611ed032475821c02b1e5a6dfb920f31",
+            "name": "Post Projects Project Sets Current Content Get",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/current\/content\/get",
+            "description": "Get Set content",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_details",
+                    "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "82fb66c86fd0956e976731e023d024c8",
+            "name": "Delete Users User",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/users\/{user_id}",
+            "description": "Delete an user",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "user_id",
+                    "description": "User id could be either a HQ user id or an Oxygen id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "e25df2167b31f8cfcc78df99683d0c79",
+            "name": "Patch Users User",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/users\/{user_id}",
+            "description": "Update an user",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "user_id",
+                    "description": "User id could be either a HQ user id or an Oxygen id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "e4953e12ac2202a90cb167aea11f4360",
+            "name": "Get Projects Project Workflows Workflow",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows\/{workflow_id}",
+            "description": "Get the workflow configuration by a given id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "workflow_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "b112e970ce813a0d43f47e8297742ca6",
+            "name": "Patch Projects Project Workflows Workflow",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows\/{workflow_id}",
+            "description": "Update the workflow",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "workflow_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "009b16853e48038b75bd1b2b951d69b7",
+            "name": "Post Projects Project Workflows",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows",
+            "description": "create a workflow with configuration",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3b78711ceecaa042544b412de2805524",
+            "name": "Get Projects Project Workflows",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows",
+            "description": "get workflows",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter[initiator]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter[status]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "7b7ea788d8d3c9cad98febc087a3eefe",
+            "name": "Get Projects Project Templates",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/templates",
+            "description": "Get all the predefined workflows",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "cf42023112979e0013e70c9983f872e0",
+            "name": "Get Projects Project Templates Template",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/templates\/{template_id}",
+            "description": "Get the predefined workflows by predefined workflow id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "template_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "17160219c4d47f5ef022ac51cac159e8",
+            "name": "Post Projects Project Reviews",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews",
+            "description": "create a review",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "force_create",
+                    "description": "force insufficient reviewer count check in group review steps.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "c4f510d0527414a960eb40a7cb8a0e96",
+            "name": "Get Projects Project Reviews",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews",
+            "description": "Get all reviews",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter[workflowId]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter[status]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter[dueDate]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter[initiatedBy]",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "39214fa287bd210040ba09474e7a6bf7",
+            "name": "Get Projects Project Reviews Review",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}",
+            "description": "Get a review",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "87ec3918884b51c56579994728c4caf4",
+            "name": "Post Projects Project Reviews Review Terminate",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/terminate",
+            "description": "Update review status with terminate",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "de4fc4434ad59cb079758a19829821bc",
+            "name": "Post Projects Project Reviews Review Notifications",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/notifications",
+            "description": "send notifications",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "2c6930d47517cacbc3911fcb0f501f8d",
+            "name": "Get Projects Project Reviews Review Progress",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/progress",
+            "description": "Get all reviews",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "9708c6db26e26a97d26a61dfcaaad8a2",
+            "name": "Get Projects Project Reviews Review Versions",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions",
+            "description": "get documents by review id",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "6e0916dd0af9eb2ef7ff7cf1ee6ba776",
+            "name": "Patch Projects Project Reviews Review Versions",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions",
+            "description": "update a bundle of documents status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "8774f1936d70e6beb801d3dfc8815641",
+            "name": "Post Projects Project Reviews Review Versions Version Urn Comments",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments",
+            "description": "add a version comment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "enhanced",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "a97b30b70b8de438b67348644d75e482",
+            "name": "Get Projects Project Reviews Review Versions Version Urn Comments",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments",
+            "description": "list all comments of the version",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "e75cb2358e7226abed9068e5e70c5fed",
+            "name": "Patch Projects Project Reviews Review Versions Version Urn Comments Comment",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments\/{comment_id}",
+            "description": "update a version comments",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "comment_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "f513f7ec88a51c41eca7d1558b1a358e",
+            "name": "Delete Projects Project Reviews Review Versions Version Urn Comments Comment",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments\/{comment_id}",
+            "description": "(Soft) Delete a version comment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "comment_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "56721dec5cd93599a19124cb6be71c3e",
+            "name": "Post Projects Project Sets Content Remove",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/content\/remove",
+            "description": "Remove all the set info from document versions",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "975b5a8b96ad02cc703e579dd423aca1",
+            "name": "Patch Projects Project Reviews Review Versions Version Urn",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}",
+            "description": "update document status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version_urn",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "f4635dc3f7a6d4544be42e0724059901",
+            "name": "Patch Projects Project Reviews Review Tasks Task",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/tasks\/{task_id}",
+            "description": "update a task status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "patch",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "review_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "task_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "31fadc5faff5cf6e5384cf0c2a67a775",
+            "name": "Post Projects Project Downloads Sets Set",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/sets\/{set_id}",
+            "description": "Prepare download versions in specific set",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "set_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "4751103ee76dcb5e019aeee8e02598e7",
+            "name": "Post Projects Project Downloads Sets Current",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/sets\/current",
+            "description": "Prepare download versions in current set",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "a6587bfab14322f9bd9c12d660e3e782",
+            "name": "Post Projects Project Downloads Versions",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/versions",
+            "description": "Prepare download specific versions",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "fbcba42c2e33228ec9a65761e5b8c2fd",
+            "name": "Post Projects Project Downloads Transmittals Transmittal",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/transmittals\/{transmittal_id}",
+            "description": "Prepare downloads for specified transmittal.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transmittal_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "990c416a55513a3396d7f19dd15a7a01",
+            "name": "Get Projects Project Downloads Download",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/{download_id}",
+            "description": "Get specific download status",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "download_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7398d8f762b1bb8b5c5c533f5d626f2",
+            "name": "Get Projects Project Downloads Download Results",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/{download_id}\/results",
+            "description": "Get specific download results",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "download_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "max to 200",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "9010b40064ff75799f6e5a66cdbc0d76",
+            "name": "Post Projects Project Downloads Download Results Urls",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/{download_id}\/results\/urls",
+            "description": "Request the prepared download resource's urls",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "download_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a9568f469ec8c5db4756bf7df007120",
+            "name": "Post Projects Versions Versionurn Officesessions",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions\/{versionUrn}\/officeSessions",
+            "description": "create a user session for office viewing or editing",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionUrn",
+                    "description": "either lineage urn or versioned file urn",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "32657e84a8f5cccc13876db855f0d52c",
+            "name": "Post Ofa V1 Versions Versionurn Officesessions",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/ofa\/v1\/versions\/{versionUrn}\/officeSessions",
+            "description": "create a user session for office viewing or editing",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "versionUrn",
+                    "description": "either lineage urn or versioned file urn",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "f37e8cbaacd49c6c561255732e8f31a1",
+            "name": "Post Wopi Files Lineageurn",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}",
+            "description": "The values of \"X-WOPI-Override\" and \"X-WOPI-OldLock\" determines what operation to use. If \"X-WOPI-Override\" is LOCK, The operation (Lock) locks a file for editing by the WOPI client application instance that requested the lock. If \"X-WOPI-Override\" is REFRESH_LOCK, The operation (RefreshLock) refreshes the lock on a file by resetting its automatic expiration timer to 30 minutes. If \"X-WOPI-Override\" is UNLOCK, The operation (Unlock) releases the lock on a file. If \"X-WOPI-Override\" is LOCK and \"",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lineageUrn",
+                    "description": "same urn used to get the access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "4d6ab5ded590082251a982a8c04c21f6",
+            "name": "Get Wopi Files Lineageurn",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}",
+            "description": "Get information about an office file, listed here for convience, the real base path should be like  https:\/\/wopi.ofa.b360.autodesk.com\/api\/v1\/",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lineageUrn",
+                    "description": "same urn used to get the access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f0cd95094ae124cef9958e78ba0a042",
+            "name": "Post Wopi Files Lineageurn Contents",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}\/contents",
+            "description": "Update the binary contents of the file. The real base path should be like  https:\/\/wopi.ofa.b360.autodesk.com\/api\/v1\/",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lineageUrn",
+                    "description": "same urn used to get the access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "3e739cc5a8a8187db42c6c12daaf2c9b",
+            "name": "Get Wopi Files Lineageurn Contents",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}\/contents",
+            "description": "The operation retrieves a file from a host., listed here for convience, the real base path should be like http:\/\/wopi.bim360docs.autodesk.com\/api\/v1\/",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "lineageUrn",
+                    "description": "same urn used to get the access token",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "access_token",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a66350d270cfa787d001307431b0ddf",
+            "name": "Post Projects Project Folders Folder Permissions Batch Create",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-create",
+            "description": "Assign permissions to multiple users, roles, and companies for a `BIM 360 Document Management <https:\/\/docs.b360.autodesk.com\/>`_ folder.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder_id",
+                    "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "permissions",
+                    "description": "A list of permission items to create in this folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f2376b91d73024e9ae27c81f1fee09a",
+            "name": "Post Projects Project Folders Folder Permissions Batch Update",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-update",
+            "description": "Updates the permissions assigned to multiple users, roles, and companies for a folder.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder_id",
+                    "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "permissions",
+                    "description": "A list of permission items to create in this folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "2dd378fdb1427bb58e83e9bfec45d045",
+            "name": "Post Projects Project Folders Folder Permissions Batch Delete",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-delete",
+            "description": "Deletes all the permissions assigned to specified users, roles, and companies. To remove some of the permissions assigned to users, roles, and companies, use the `Update permissions <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-folders-folder_id-permissionsbatch-update-POST>`_ endpoint.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder_id",
+                    "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "permissions",
+                    "description": "A list of permission items to create in this folder.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "5a9de3ef9c49156338e543eed6f73373",
+            "name": "Get Projects Project Folders Folder Permissions",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions",
+            "description": "Retrieves information about the permissions assigned to users, roles and companies for a `BIM 360 Document Management <https:\/\/docs.b360.autodesk.com\/>`_ folder, including details about the name and the status.\n\nFor information about the different types of permissions you can assign to a user, role or company, see the `Help documentation <http:\/\/help.autodesk.com\/view\/BIM360D\/ENU\/?guid=GUID-2643FEEF-B48A-45A1-B354-797DAD628C37>`_.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "project_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "folder_id",
+                    "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "x",
+                    "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a91446f05837c833b0fa3392b11bdd9",
+            "name": "Get Projects Versions Versionid Properties",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions\/{versionId}\/properties",
+            "description": "Get version properties by the urn",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "versionUrn whose properties will be get.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "fbeddca5f9225c90db39c9cca446c1ed",
+            "name": "Post Projects Versions Versionid Properties",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions\/{versionId}\/properties",
+            "description": "update version properties",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "projectId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "versionId",
+                    "description": "versionUrn whose properties will be get.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "body",
+                    "description": "The top folders and options info",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "540078984f9fbc8cab8ed96f2acf2e65",
+            "name": "Delete Account Account",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/account\/{account_id}",
+            "description": "Delete an account",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "account_id",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        },
+        {
+            "id": "0c4a8fcfdccea0d1cf6b94aa73f9a0d5",
+            "name": "X-swagger-pipe Swagger",
+            "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/swagger",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-swagger-pipe",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "rawModeData": ""
+        }
+    ]
+}
