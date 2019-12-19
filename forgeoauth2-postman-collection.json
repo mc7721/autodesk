@@ -1,0 +1,160 @@
+{
+    "id": "8406960bd6fadee1f320c325a5075ff6",
+    "name": "Forge-oauth2",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "5143d81f98caaf59aadb65eb38435b9e",
+            "name": "POST authenticate",
+            "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/authenticate",
+            "description": "Get a two-legged access token by providing your app's client ID and secret.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a577729306a9d0ec18142fa5fc9a48e",
+            "name": "GET authorize",
+            "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/authorize",
+            "description": "This is the browser URL to redirect an end user to in order to acquire the user\u2019s consent for your app to access the specified resources.\nNote: You do not call this URL directly in your server code. See the Get a 3-Legged Token tutorial for more information on how to use this endpoint.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "rawModeData": ""
+        },
+        {
+            "id": "de29ab7e1a2276c4e6fc815c5849b251",
+            "name": "POST gettoken",
+            "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/gettoken",
+            "description": "Exchange an authorization code extracted from a GET authorize callback for a three-legged access token.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "rawModeData": ""
+        },
+        {
+            "id": "4218080712c4808cc3044698eed398b0",
+            "name": "POST refreshtoken",
+            "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/refreshtoken",
+            "description": "Acquire a new access token by using the refresh token provided by the POST gettoken endpoint.\nSee the Field Guide for more information about refresh tokens.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "rawModeData": ""
+        },
+        {
+            "id": "3487a3a7483665f5b8787a1e23432656",
+            "name": "GET users\/@me",
+            "url": "http:\/\/developer.api.autodesk.com\/\/userprofile\/v1\/users\/@me",
+            "description": "GET users\/@me",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "rawModeData": ""
+        }
+    ]
+}
