@@ -1,0 +1,190 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.4",
+        "title": "Forge-oauth2",
+        "description": "OAuth, specifically OAuth2, is the open standard used across the Forge Platform for token-based authentication and authorization.\n\nIn this section, you will find the following resources:\n\nHow to register an app on the platform\nExplanations of basic concepts, such as client ID and secret, tokens, scopes, and two-legged versus three-legged authentication\nStep-by-step tutorials that walk you through a few common workflows\nDocumentation on each of the OAuth REST endpoints\n",
+        "termsOfService": "http:\/\/www.autodesk.com\/company\/legal-notices-trademarks\/terms-of-service-autodesk360-web-services\/autodesk-web-services-api-beta-terms-of-service"
+    },
+    "servers": [
+        "http:\/\/developer.api.autodesk.com\/"
+    ],
+    "paths": {
+        "\/authentication\/v1\/authenticate": {
+            "post": {
+                "summary": "POST authenticate",
+                "description": "Get a two-legged access token by providing your app's client ID and secret.\n",
+                "operationId": "Authenticate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/authentication\/v1\/authorize": {
+            "get": {
+                "summary": "GET authorize",
+                "description": "This is the browser URL to redirect an end user to in order to acquire the user\u2019s consent for your app to access the specified resources.\nNote: You do not call this URL directly in your server code. See the Get a 3-Legged Token tutorial for more information on how to use this endpoint.\n",
+                "operationId": "Authorize",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/authentication\/v1\/gettoken": {
+            "post": {
+                "summary": "POST gettoken",
+                "description": "Exchange an authorization code extracted from a GET authorize callback for a three-legged access token.\n",
+                "operationId": "Gettoken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/authentication\/v1\/refreshtoken": {
+            "post": {
+                "summary": "POST refreshtoken",
+                "description": "Acquire a new access token by using the refresh token provided by the POST gettoken endpoint.\nSee the Field Guide for more information about refresh tokens.\n",
+                "operationId": "Refreshtoken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/userprofile\/v1\/users\/@me": {
+            "get": {
+                "summary": "GET users\/@me",
+                "description": "GET users\/@me",
+                "operationId": "AboutMe",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Bearer": {
+                "type": "object",
+                "properties": {
+                    "token_type": {
+                        "description": "Will always be Bearer",
+                        "type": "string"
+                    },
+                    "expires_in": {
+                        "description": "Access token expiration time (in seconds)",
+                        "type": "integer"
+                    },
+                    "access_token": {
+                        "description": "The access token",
+                        "type": "string"
+                    },
+                    "refresh_token": {
+                        "description": "The refresh token",
+                        "type": "string"
+                    }
+                }
+            },
+            "UserProfile": {
+                "type": "object",
+                "properties": {
+                    "userId": {
+                        "description": "The backend user ID of the profile",
+                        "type": "string"
+                    },
+                    "userName": {
+                        "description": "The username chosen by the user",
+                        "type": "string"
+                    },
+                    "emailId": {
+                        "description": "The user\u2019s email address",
+                        "type": "string"
+                    },
+                    "firstName": {
+                        "description": "The user\u2019s first name",
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "description": "The user\u2019s last name",
+                        "type": "string"
+                    },
+                    "emailVerified": {
+                        "description": "true if the user\u2019s email address has been verified false if the user\u2019s email address has not been verified\n",
+                        "type": "boolean"
+                    },
+                    "2FaEnabled": {
+                        "description": "true if the user has enabled two-factor authentication false if the user has not enabled two-factor authentication\n",
+                        "type": "boolean"
+                    },
+                    "profileImages": {
+                        "description": "A flat JSON object of attribute-value pairs in which the attributes specify available profile image sizes in the format sizeX<pixels> (where <pixels> is an integer that represents both height and width in pixels of square profile images) and the values are URLs for downloading the images via HTTP",
+                        "type": "object"
+                    }
+                }
+            },
+            "profileImages": {
+                "type": "object"
+            },
+            "oAuthError": {
+                "type": "object",
+                "properties": {
+                    "errorMessage": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "errorCode": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "errorResponse": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
