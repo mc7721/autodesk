@@ -1,0 +1,2015 @@
+{
+    "id": "a0ce75faedce39c58a4c6a5f658b45a1",
+    "name": "Forge-Data-Management",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "45f26a227e431648af12d5e55340dec3",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/health",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "11752966517b403606125bd10e1910d2",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/health",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "dfe56b7fffd1ded838715e1bc82481ef",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/health",
+            "description": "Returns health information for the `project` domain.\nThe health check assesses the current working status of the 'project' domain service.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "d5477c44c359cd672273bd8b92d98639",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "044b9bcfb402aed5420615107271624c",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "f0e1ade23c43f77b4955a1127cabdba3",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs",
+            "description": "Returns a collection of accessible hubs for this member.\nA Hub represents an A360 Team\/Personal hub or a BIM 360 account.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "7d17fbe9225b0ca9f7a2a8798abbefaa",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "4e4fbabc99185877075d53f18aac28ab",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea41ae4d2dc5e53da2129d2121abce63",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}",
+            "description": "Returns data on a specific `hub_id`.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "f6917943a8a6f91d89f4d37f1b58211c",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ae1d635dc4c8c463c330441ed5dec1f6",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6d9b9afb5f58b37d5985fc9d468094ea",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects",
+            "description": "Returns a collection of projects for a given `hub_id`.\nA project represents an A360 project or a BIM 360 project which is set up under an A360 hub or BIM 360 account, respectively.\nWithin a hub or an account, multiple projects can be created to be used.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "97924cde2dba8a503f6832591acb0270",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "277db797a4ef411704b1ec73282cabeb",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "62055bf28b2c81d71f4f79c7e4a6a73f",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}",
+            "description": "Returns a project for a given `project_id`.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "d2477b9edb895d08604f938157073ae8",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}\/hub",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f9bbbe90c2447ceb4c381e6a62c31a8",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}\/hub",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "f3b499332108af9f129d0fea11bf463e",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}\/hub",
+            "description": "Returns the hub for a given `project_id`.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e7365f51ef052dc33c4f3178510536b7",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/health",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5175ab302e22509e183baeb8c826474",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/health",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2089a434bae98bd3fe06d1296c496d24",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/health",
+            "description": "Returns the health information for the `data` domain.\nThe health check assesses the current working status of the 'data' domain service.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d893e043e0af8322a451ea7a84b90cc",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2eb20fe455d967e1a200212052963442",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ef8701804638c4cf17f7f236187b346",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}",
+            "description": "Returns the folder by ID for any folder within a given project.\nAll folders or sub-folders within a project are associated with their own unique ID, including the root folder.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "aee2fcb2c8ed73a28787d3deff4a348a",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/parent",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "39b80fbedc77d7c76668dd08bb25a16e",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/parent",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "11cdc151b5379c75335d7bb945a0dac4",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/parent",
+            "description": "Returns the parent folder (if it exists).\nIn a project, subfolders and resource items are stored under a folder\nexcept the root folder which does not have a parent of its own.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f2c528d7d2b14e39534d4b1106217f9",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/contents",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "12f0233ad64413c610b99a3d0544db31",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/contents",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ecb8c5f097a4e6eaf8de2bb021455dbd",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/contents",
+            "description": "Returns a collection of items and folders within a folder.\nItems represent word documents, fusion design files, drawings, spreadsheets, etc.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e0fd6d217d4e4668c382de785a804559",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2f43e439d87150ad17903af1b3582cd5",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "71db8b5d1f2aab98d4c38d4785aac5f7",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/refs",
+            "description": "Returns the resources (`items`, `folders`, and `versions`) which have a custom relationship with the given `folder_id`.\nCustom relationships can be established between a folder and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2ffb8b064609d614185f795fe169aced",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/relationships\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "bc5cca92821ee4efa24eee60705b3128",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/relationships\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6621051214730d1f264119d6e11c575d",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/relationships\/refs",
+            "description": "Returns the custom relationships that are associated to the given `folder_id`.\nCustom relationships can be established between a folder and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ede9b6c1f86de3e3e6a4f98aa2127e52",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/relationships\/refs",
+            "description": "Creates a custom relationship between a folder and another resource within the 'data' domain service (folder, item, or version).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "ef42e1d8b0dfa71430eeaa2cf09745d6",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "4c1c33fc4b1157e278161ec2abd53d76",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "26ff963cfaaacd079814e0254330cafd",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}",
+            "description": "Returns a resource item by ID for any item within a given project.\nResource items represent word documents, fusion design files, drawings, spreadsheets, etc.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9598f9ae942af25df5e1e2823174c6e",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/parent",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b1781885034fc69322cbee931d98766b",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/parent",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "99490fb11774b262e883df51bb9a61e2",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/parent",
+            "description": "Returns the \"parent\" folder for the given item.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "fd361ff9124b3cd5e7f83f7d2c366779",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2e69fe8a16e56cc023a5a75370034589",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "937078588efc3ff2de15ba7d462cc19c",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/refs",
+            "description": "Returns the resources (`items`, `folders`, and `versions`) which have a custom relationship with the given `item_id`.\nCustom relationships can be established between an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "bbd611cd98eacea68d993c3671ac0666",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/relationships\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "a3f4f03ea1c9f9b7b4b138ee1d850d3c",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/relationships\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "9dacb05536e61b7a53cc10e1a355ad8a",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/relationships\/refs",
+            "description": "Returns the custom relationships that are associated to the given `item_id`.\nCustom relationships can be established between an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "2069a66a998abdd3f4ee237a28de5a6a",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/relationships\/refs",
+            "description": "Creates a custom relationship between an item and another resource within the 'data' domain service (folder, item, or version).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e6d2414e698d1190bc63c088d649e268",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/tip",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "3d04ea1d67505cda43dbc70709ee0b8b",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/tip",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "25377a94de2983b111292e4fbf8d44e7",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/tip",
+            "description": "Returns the \"tip\" version for the given item.\nMultiple versions of a resource item can be uploaded in a project.\nThe tip version is the most recent one.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "c8f0cda6303243b3c6a440033c10efba",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/versions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "28ce4729ecce594c0eae4171e3492684",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/versions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e5e73b9087d46eace840be0a9abef87",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/versions",
+            "description": "Returns versions for the given item.\nMultiple versions of a resource item can be uploaded in a project.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b4483cb0f3a8c257de9acb858f2a1d54",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "863eeae42ce441aa0edb26f7dad1c8dd",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6af0f341fa546ef87c660adc89a5fa66",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}",
+            "description": "Returns the version with the given `version_id`.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6bba559e17e4db847829c7cd84bd9c5b",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/item",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b657d386cad1e7ddb894560f48660b0f",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/item",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5f295e496749ee9858645fdf2454f0d",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/item",
+            "description": "Returns the item the given version is associated with.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "f10192b42ab61a6e68e8006446fca302",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6bed1551490809b108a18612a3852419",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "0f9efa0c8bf6b5016db8aec1b8d57a25",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/refs",
+            "description": "Returns the resources (`items`, `folders`, and `versions`) which have a custom relationship with the given `version_id`.\nCustom relationships can be established between a version of an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "83d2856a46aa054e107fea0c325fcc99",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/relationships\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "5f7d40f3b3dd97d1104f19de2ab158cd",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/relationships\/refs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd1691f57d32d25e1783c3472755a7d2",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/relationships\/refs",
+            "description": "Returns the custom relationships that are associated to the given `version_id`.\nCustom relationships can be established between a version of an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "707c90a62e4eb97c38274d4e3c24cac0",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/relationships\/refs",
+            "description": "Creates a custom relationship between a version and another resource within the 'data' domain service (folder, item, or version).\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "c2525976f64a30cd6c7e443888ec21ca",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/storage",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "1ec2c83988e60a5d13ea4406efa58edc",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/storage",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "e6003062c23db85da546cc5e6f49d852",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/storage",
+            "description": "Creates a storage location in the OSS where data can be uploaded to.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "3c1680a080f736c095792366964db30c",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "d0730524dfc77b63acc6438b1b503f7f",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "94bc39da8efb8645bc685a14971636f7",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/items",
+            "description": "Creates a new item in the 'data' domain service.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "1755d4c78399681260a12e676abde695",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-summary",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "c252ec04457f98a203cef359bf7192b5",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "x-description",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "6398ca5b217e5f5da09c39d5d60754df",
+            "name": "",
+            "url": "http:\/\/developer.api.autodesk.com\/\/data\/v1\/projects\/{project_id}\/versions",
+            "description": "Creates a new version of an item in the 'data' domain service.\n",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "No Name",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a0ce75faedce39c58a4c6a5f658b45a1",
+            "rawModeData": ""
+        }
+    ]
+}
