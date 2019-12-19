@@ -1,0 +1,1238 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "2.0.5",
+        "title": "Forge-Data-Management",
+        "description": "The Data Management API provides a unified and consistent way to access data across A360, Fusion 360, and the Object Storage Service.\n\nWith this API, you can accomplish a number of workflows, including accessing a Fusion model in A360 and getting an ordered structure of items, IDs, and properties for generating a bill of materials in a 3rd-party process. Or, you might want to superimpose a Fusion model and a building model to use in the [Viewer](https:\/\/developer.autodesk.com\/en\/docs\/viewer\/v2).\n\nThe Data Management API is composed of the following services:\n\n|  |  |\n|-----|-----|\n| Project Service | Navigate to a project from an A360 Hub. The project acts as an \u201canchor\u201d point for data available through the API. |\n| Data Service | Navigate and manage the A360 metadata in terms of folders, items, and versions, as well as the relationships between these entities. An item could be a file or a Fusion 360 design. Each item can have multiple versions. |\n| Schema Service | This allows you",
+        "termsOfService": "http:\/\/www.autodesk.com\/company\/legal-notices-trademarks\/terms-of-service-autodesk360-web-services\/autodesk-web-services-api-beta-terms-of-service"
+    },
+    "servers": [
+        "http:\/\/developer.api.autodesk.com\/"
+    ],
+    "paths": {
+        "\/project\/v1\/health": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns health information for the `project` domain.\nThe health check assesses the current working status of the 'project' domain service.\n",
+                "operationId": "GetProjectHealth",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/project\/v1\/hubs": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns a collection of accessible hubs for this member.\nA Hub represents an A360 Team\/Personal hub or a BIM 360 account.\n",
+                "operationId": "GetHubs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/project\/v1\/hubs\/{hub_id}": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns data on a specific `hub_id`.\n",
+                "operationId": "GetHub",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/project\/v1\/hubs\/{hub_id}\/projects": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns a collection of projects for a given `hub_id`.\nA project represents an A360 project or a BIM 360 project which is set up under an A360 hub or BIM 360 account, respectively.\nWithin a hub or an account, multiple projects can be created to be used.\n",
+                "operationId": "GetHubProjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns a project for a given `project_id`.\n",
+                "operationId": "GetProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/project\/v1\/hubs\/{hub_id}\/projects\/{project_id}\/hub": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the hub for a given `project_id`.\n",
+                "operationId": "GetProjectHub",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/health": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the health information for the `data` domain.\nThe health check assesses the current working status of the 'data' domain service.\n",
+                "operationId": "GetDataHealth",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the folder by ID for any folder within a given project.\nAll folders or sub-folders within a project are associated with their own unique ID, including the root folder.\n",
+                "operationId": "GetFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/parent": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the parent folder (if it exists).\nIn a project, subfolders and resource items are stored under a folder\nexcept the root folder which does not have a parent of its own.\n",
+                "operationId": "GetFolderParent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/contents": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns a collection of items and folders within a folder.\nItems represent word documents, fusion design files, drawings, spreadsheets, etc.\n",
+                "operationId": "GetFolderContents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/refs": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the resources (`items`, `folders`, and `versions`) which have a custom relationship with the given `folder_id`.\nCustom relationships can be established between a folder and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+                "operationId": "GetFolderRefs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/folders\/{folder_id}\/relationships\/refs": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the custom relationships that are associated to the given `folder_id`.\nCustom relationships can be established between a folder and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+                "operationId": "GetFolderRelationshipsRefs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a custom relationship between a folder and another resource within the 'data' domain service (folder, item, or version).\n",
+                "operationId": "PostFolderRelationshipsRef",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/items\/{item_id}": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns a resource item by ID for any item within a given project.\nResource items represent word documents, fusion design files, drawings, spreadsheets, etc.\n",
+                "operationId": "GetItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/parent": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the \"parent\" folder for the given item.\n",
+                "operationId": "GetItemParentFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/refs": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the resources (`items`, `folders`, and `versions`) which have a custom relationship with the given `item_id`.\nCustom relationships can be established between an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+                "operationId": "GetItemRefs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/relationships\/refs": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the custom relationships that are associated to the given `item_id`.\nCustom relationships can be established between an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+                "operationId": "GetItemRelationshipsRefs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a custom relationship between an item and another resource within the 'data' domain service (folder, item, or version).\n",
+                "operationId": "PostItemRelationshipsRef",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/tip": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the \"tip\" version for the given item.\nMultiple versions of a resource item can be uploaded in a project.\nThe tip version is the most recent one.\n",
+                "operationId": "GetItemTip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/items\/{item_id}\/versions": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns versions for the given item.\nMultiple versions of a resource item can be uploaded in a project.\n",
+                "operationId": "GetItemVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/versions\/{version_id}": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the version with the given `version_id`.\n",
+                "operationId": "GetVersion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/item": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the item the given version is associated with.\n",
+                "operationId": "GetVersionItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/refs": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the resources (`items`, `folders`, and `versions`) which have a custom relationship with the given `version_id`.\nCustom relationships can be established between a version of an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+                "operationId": "GetVersionRefs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/versions\/{version_id}\/relationships\/refs": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "",
+                "description": "Returns the custom relationships that are associated to the given `version_id`.\nCustom relationships can be established between a version of an item and\nother resources within the 'data' domain service (folders, items, and versions).\n",
+                "operationId": "GetVersionRelationshipsRefs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a custom relationship between a version and another resource within the 'data' domain service (folder, item, or version).\n",
+                "operationId": "PostVersionRelationshipsRef",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/storage": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a storage location in the OSS where data can be uploaded to.\n",
+                "operationId": "PostStorage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/items": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a new item in the 'data' domain service.\n",
+                "operationId": "PostItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "\/data\/v1\/projects\/{project_id}\/versions": {
+            "x-summary": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "x-description": {
+                "summary": "",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "",
+                "description": "Creates a new version of an item in the 'data' domain service.\n",
+                "operationId": "PostVersion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "No Name",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "json_api_version": {
+                "type": "object",
+                "properties": {
+                    "jsonapi": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "jsonapi": {
+                "type": "object"
+            },
+            "json_api_error": {
+                "type": "object"
+            },
+            "json_api_document_base": {
+                "type": "object"
+            },
+            "json_api_document": {
+                "type": "object"
+            },
+            "json_api_collection": {
+                "type": "object"
+            },
+            "json_api_type_id": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "resource id",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "resource type",
+                        "type": "string"
+                    }
+                }
+            },
+            "json_api_resource": {
+                "type": "object"
+            },
+            "json_api_attributes": {
+                "type": "object"
+            },
+            "json_api_meta": {
+                "type": "object"
+            },
+            "json_api_relationships": {
+                "type": "object"
+            },
+            "json_api_links": {
+                "type": "object",
+                "properties": {
+                    "self": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "self": {
+                "type": "object"
+            },
+            "json_api_link": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "json_api_links_self": {
+                "type": "object",
+                "properties": {
+                    "json_api_link": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "self": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "json_api_links_related": {
+                "type": "object",
+                "properties": {
+                    "json_api_link": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "related": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "json_api_meta_link": {
+                "type": "object",
+                "properties": {
+                    "json_api_link": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "link": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "json_api_relationships_links_internal": {
+                "type": "object",
+                "properties": {
+                    "json_api_links_related": {
+                        "description": "provides a link to related resources",
+                        "type": "object"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "json_api_relationships_links_internal_resource": {
+                "type": "object",
+                "properties": {
+                    "json_api_links_related": {
+                        "description": "provides a link to related resources",
+                        "type": "object"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "json_api_type_id": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "json_api_relationships_links_external_resource": {
+                "type": "object",
+                "properties": {
+                    "json_api_meta_link": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "meta": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "json_api_type_id": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "json_api_relationships_links_refs": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "links": {
+                "type": "object"
+            },
+            "json_api_links_paging": {
+                "type": "object",
+                "properties": {
+                    "json_api_link": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "first": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "prev": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "next": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "last": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "base_attributes_created_updated": {
+                "type": "object",
+                "properties": {
+                    "attributes": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "attributes": {
+                "type": "object"
+            },
+            "base_attributes_extension_object": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "resource type",
+                        "type": "string"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "json_api_link": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "schema": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "data": {
+                "type": "object"
+            },
+            "health": {
+                "type": "object"
+            },
+            "hub": {
+                "type": "object"
+            },
+            "project": {
+                "type": "object"
+            },
+            "folder": {
+                "type": "object"
+            },
+            "item": {
+                "type": "object"
+            },
+            "version": {
+                "type": "object"
+            },
+            "rel_ref": {
+                "type": "object"
+            },
+            "storage": {
+                "type": "object"
+            },
+            "create_storage": {
+                "type": "object"
+            },
+            "create_item": {
+                "type": "object"
+            },
+            "create_version": {
+                "type": "object"
+            },
+            "create_ref": {
+                "type": "object"
+            },
+            "health__response": {
+                "type": "object"
+            },
+            "hubs__response": {
+                "type": "object"
+            },
+            "hub__response": {
+                "type": "object"
+            },
+            "projects__response": {
+                "type": "object"
+            },
+            "project__response": {
+                "type": "object"
+            },
+            "folder__response": {
+                "type": "object"
+            },
+            "item__response": {
+                "type": "object"
+            },
+            "refs__response": {
+                "type": "object"
+            },
+            "version__response": {
+                "type": "object"
+            },
+            "versions__response": {
+                "type": "object"
+            },
+            "storage_created__response": {
+                "type": "object"
+            },
+            "item_created__response": {
+                "type": "object"
+            },
+            "version_created__response": {
+                "type": "object"
+            },
+            "bad_input__response": {
+                "type": "object"
+            },
+            "forbidden__response": {
+                "type": "object"
+            },
+            "not_found__response": {
+                "type": "object"
+            },
+            "conflict__response": {
+                "type": "object"
+            }
+        }
+    }
+}
