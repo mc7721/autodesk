@@ -1,0 +1,4762 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "[BIM360] Docs V2 API",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsdeveloper.api.autodesk.com\/dm\/v2"
+    ],
+    "paths": {
+        "\/projects\/{projectId}\/users": {
+            "get": {
+                "summary": "Get Projects Users",
+                "description": "Get users of the given company, filter out pending users, default sort by name",
+                "operationId": "GetUsersOfTheGivenCompanyFilterOutPendingUsersDefaultSortByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "includePending",
+                        "in": "query",
+                        "description": "whether inlcude pending user"
+                    },
+                    {
+                        "name": "includeInactive",
+                        "in": "query",
+                        "description": "whether include inactive user"
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": "company filter. If supply it will only return thoes users belongs to the given company."
+                    },
+                    {
+                        "name": "roleId",
+                        "in": "query",
+                        "description": "role filter. If supply it will only return thoes users belongs to the given role."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/folders\/{folder_urn}\/parents": {
+            "get": {
+                "summary": "Get Projects Folders Folder Urn Parents",
+                "description": "Get parent folders",
+                "operationId": "GetParentFolders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "folder_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "includePermission",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/content:sync": {
+            "post": {
+                "summary": "Post Projects Content Sync",
+                "description": "Creates a command to fetch contents by top folders from Wip asynchronously",
+                "operationId": "CreatesACommandToFetchContentsByTopFoldersFromWipAsynchronously",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/content-sync\/{commandId}": {
+            "get": {
+                "summary": "Get Projects Content Sync Commandid",
+                "description": "Fetch content cache by command id",
+                "operationId": "FetchContentCacheByCommandId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "commandId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/storage": {
+            "post": {
+                "summary": "Post Projects Storage",
+                "description": "Creates a storage location in the OSS where data can be uploaded to",
+                "operationId": "CreatesAStorageLocationInTheOssWhereDataCanBeUploadedTo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/photos": {
+            "post": {
+                "summary": "Post Projects Photos",
+                "description": "Create a new photo in photo container",
+                "operationId": "CreateANewPhotoInPhotoContainer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/containers": {
+            "post": {
+                "summary": "Post Projects Containers",
+                "description": "Create a container by type for a project",
+                "operationId": "CreateAContainerByTypeForAProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}": {
+            "get": {
+                "summary": "Get Projects Project",
+                "description": "Get a project",
+                "operationId": "GetAProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Projects Project",
+                "description": "Delete a project",
+                "operationId": "DeleteAProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/settings": {
+            "patch": {
+                "summary": "Patch Projects Settings",
+                "description": "Project-level settings for admins.",
+                "operationId": "ProjectlevelSettingsForAdmins",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/transmittals": {
+            "post": {
+                "summary": "Post Projects Transmittals",
+                "description": "Create a transmittal",
+                "operationId": "CreateATransmittal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Projects Transmittals",
+                "description": "List transmittals",
+                "operationId": "ListTransmittals",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    },
+                    {
+                        "name": "sentBy",
+                        "in": "query",
+                        "description": "list the transmittals which are sent by the given userId(s). Can supply max up to 10 userIds and seperate them with comma."
+                    },
+                    {
+                        "name": "beginCreatedTime",
+                        "in": "query",
+                        "description": "list the transmittals which are sent after the given time."
+                    },
+                    {
+                        "name": "endCreatedTime",
+                        "in": "query",
+                        "description": "list the transmittals which are sent before the given time."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/transmittals\/{transmittalId}": {
+            "get": {
+                "summary": "Get Projects Transmittals Transmittalid",
+                "description": "Get a transmittal by id",
+                "operationId": "GetATransmittalById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "transmittalId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/transmittals\/{transmittalId}\/documents": {
+            "get": {
+                "summary": "Get Projects Transmittals Transmittalid Documents",
+                "description": "List documents in a transmittal",
+                "operationId": "ListDocumentsInATransmittal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "transmittalId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/transmittals\/{transmittalId}\/recipients": {
+            "get": {
+                "summary": "Get Projects Transmittals Transmittalid Recipients",
+                "description": "List recipients in a transmittal",
+                "operationId": "ListRecipientsInATransmittal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "transmittalId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/versions\/{version_id}\/exports": {
+            "post": {
+                "summary": "Post Projects Project Versions Version Exports",
+                "description": "Exports a single page from an uploaded PDF file into a new PDF file. You can also export the page's markups (annotations) and hyperlinks.\n\nNote that you can only export a page from a PDF file that was uploaded to the Plans folder or to a folder nested under the Plans folder (``attributes.extension.data.actions: SPLIT``). BIM 360 Document Management splits these files into separate pages (sheets) when they are uploaded, and assigns a separate ID to each page. You can identify exportable PDF files",
+                "operationId": "ExportsASinglePageFromAnUploadedPdfFileIntoANewPdfFileYouCanAlsoExportThePagesMa",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_id",
+                        "in": "path",
+                        "description": "The URL-encoded version ID (URN) of the page to export.\n\nWhen a file is uploaded to BIM 360 Document Management, a corresponding version ID is created for the file.\n\nEvery time the file is saved a new version is created. When a PDF file is uploaded to the Plans folder or to a child of the Plans folder, BIM 360 assigns a separate version ID to each page of the PDF. The user needs to select the version ID that corresponds to the page that he\/she wants to export.\n\nTo export the latest version (``ti"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/versions:batchGet": {
+            "post": {
+                "summary": "Post Projects Project Versions Batchget",
+                "description": "Batch get documents",
+                "operationId": "BatchGetDocuments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/versions\/{version_id}\/exports\/{export_id}": {
+            "get": {
+                "summary": "Get Projects Project Versions Version Exports Export",
+                "description": "Returns the status of a PDF export job, as well as data you need to download the exported file when the export is complete.\n\nThe `POST projects\/:project_id\/versions\/:version_id\/exports <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-versions-version_id-exports-POST>`_ endpoint initiates the job, and returns a job ID to be used in this endopint.\n\nTo download the exported PDF file after the job is complete, use `GET :urn\/manifest\/:derivativeurn <\/en\/docs\/model-derivative",
+                "operationId": "ReturnsTheStatusOfAPdfExportJobAsWellAsDataYouNeedToDownloadTheExportedFileWhenT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_id",
+                        "in": "path",
+                        "description": "The URL-encoded version ID (URN) of the page to export.\n\nWhen a file is uploaded to BIM 360 Document Management, a corresponding version ID is created for the file.\n\nEvery time the file is saved a new version is created. When a PDF file is uploaded to the Plans folder or to a child of the Plans folder, BIM 360 assigns a separate version ID to each page of the PDF. The user needs to select the version ID that corresponds to the page that he\/she wants to export.\n\nTo export the latest version (``ti"
+                    },
+                    {
+                        "name": "export_id",
+                        "in": "path",
+                        "description": "The ID of the export job; returned when initiating `POST projects\/:project_id\/versions\/:version_id\/exports <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-versions-version_id-exports-POST>`_."
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/versions\/{version_urn}": {
+            "patch": {
+                "summary": "Patch Projects Project Versions Version Urn",
+                "description": "Update properties of one document",
+                "operationId": "UpdatePropertiesOfOneDocument",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/versions:upload": {
+            "post": {
+                "summary": "Post Projects Project Versions Upload",
+                "description": "Upload one document (can be one of [files|items|versions]) <figure role=\"img\" aria-labelledby=\"cow-caption\"> <figcaption id=\"cow-caption\"> GET \/projects\/{project_id}\/commands\/{command_id} response example: <\/figcaption> <pre> { \"data\": { \"type\": \"commands\", \"id\": \"string\", \"attributes\": { \"extension\": { \"type\": \"commands:autodesk.bim360:files.upload\", \"version\": \"1.0.0\", \"schema\": { \"href\": \"https:\/\/developer.api.autodesk.com\/schema\/v1\/versions\/commands:autodesk.bim360:files.upload-1.0.0\" } }, \"",
+                "operationId": "UploadOneDocumentCanBeOneOfFilesitemsversionsFigureRoleimgArialabelledbycowcaptionFigcapt",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/versions:batchUpload": {
+            "post": {
+                "summary": "Post Projects Project Versions Batchupload",
+                "description": "Upload documents (can be one of files|items|versions) <figure role=\"img\" aria-labelledby=\"cow-caption\"> <figcaption id=\"cow-caption\"> GET \/projects\/{project_id}\/commands\/{command_id} response example: <\/figcaption> <pre> { \"data\": { \"type\": \"commands\", \"id\": \"string\", \"attributes\": { \"extension\": { \"type\": \"commands:autodesk.bim360:files.upload\", \"version\": \"1.0.0\", \"schema\": { \"href\": \"https:\/\/developer.api.autodesk.com\/schema\/v1\/versions\/commands:autodesk.bim360:files.upload-1.0.0\" } }, \"statu",
+                "operationId": "UploadDocumentsCanBeOneOfFilesitemsversionsFigureRoleimgArialabelledbycowcaptionFigcaption",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/folders\/{folder_urn}": {
+            "patch": {
+                "summary": "Patch Projects Project Folders Folder Urn",
+                "description": "Update attributes of one Folder",
+                "operationId": "UpdateAttributesOfOneFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "folder_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    },
+                    {
+                        "name": "needPropagate",
+                        "in": "query",
+                        "description": "If this change needs to propagate to children."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions:forgeCopyToFolder": {
+            "post": {
+                "summary": "Post Projects Versions Forgecopytofolder",
+                "description": "Copy a version to a folder as new item and first version",
+                "operationId": "CopyToFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions:forgeCopyToItem": {
+            "post": {
+                "summary": "Post Projects Versions Forgecopytoitem",
+                "description": "Copy a version to a folder as new version on existing item",
+                "operationId": "CopyToItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions:forgePromote": {
+            "post": {
+                "summary": "Post Projects Versions Forgepromote",
+                "description": "Promote previous version as latest version on the same item. Use for immutable rename or to restore deleted version",
+                "operationId": "PromoteVersion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/folders:forgeRename": {
+            "post": {
+                "summary": "Post Projects Folders Forger Rename",
+                "description": "Rename a folder",
+                "operationId": "RenameFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/folders:forgeDelete": {
+            "post": {
+                "summary": "Post Projects Folders Forgedelete",
+                "description": "Delete a folder",
+                "operationId": "DeleteFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/folders:checkDeleted": {
+            "post": {
+                "summary": "Post Projects Folders Checkdeleted",
+                "description": "Check deleted statuses for specified folders",
+                "operationId": "CheckFoldersDeleted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/folders:forgeCreate": {
+            "post": {
+                "summary": "Post Projects Folders Forgecreate",
+                "description": "Create a folder",
+                "operationId": "CreateFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/folders:forgeMove": {
+            "post": {
+                "summary": "Post Projects Folders Forgemove",
+                "description": "Move one folder including its content to a new parent folder",
+                "operationId": "MoveFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions:forgeCreate": {
+            "post": {
+                "summary": "Post Projects Versions Forgecreate",
+                "description": "Create a new version on an existing item",
+                "operationId": "CreateVersion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/items:forgeCreate": {
+            "post": {
+                "summary": "Post Projects Items Forgecreate",
+                "description": "Create a new item with its first version",
+                "operationId": "CreateItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions:forgeCreateAndNoProcess": {
+            "post": {
+                "summary": "Post Projects Versions Forgecreateandnoprocess",
+                "description": "Create a new version on an existing item without translation",
+                "operationId": "CreateVersionWithoutTranslation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/items:forgeCreateAndNoProcess": {
+            "post": {
+                "summary": "Post Projects Items Forgecreateandnoprocess",
+                "description": "Create a new item with its first version without translation",
+                "operationId": "CreateItemWithoutTranslation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/folders:forgeRestore": {
+            "post": {
+                "summary": "Post Projects Folders Forgerestore",
+                "description": "Restore a folder",
+                "operationId": "RestoreFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions:batchCopy": {
+            "post": {
+                "summary": "Post Projects Versions Batchcopy",
+                "description": "Batch copy versioned files",
+                "operationId": "BatchCopyVersionedFiles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/items:forgeDelete": {
+            "post": {
+                "summary": "Post Projects Items Forgedelete",
+                "description": "delete a document",
+                "operationId": "DeleteItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/items:forgeMove": {
+            "post": {
+                "summary": "Post Projects Project Items Forgemove",
+                "description": "move a document to a given folder",
+                "operationId": "MoveItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/items:forgeLock": {
+            "post": {
+                "summary": "Post Projects Items Forgelock",
+                "description": "lock a document",
+                "operationId": "LockItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/items:forgeUnlock": {
+            "post": {
+                "summary": "Post Projects Items Forge Unlock",
+                "description": "unlock a document",
+                "operationId": "UnlockItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets": {
+            "get": {
+                "summary": "Get Projects Project Sets",
+                "description": "Sets list",
+                "operationId": "SetsList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Projects Project Sets",
+                "description": "Create a Set",
+                "operationId": "CreateASet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/{set_id}": {
+            "patch": {
+                "summary": "Patch Projects Project Sets Set",
+                "description": "Update a Set",
+                "operationId": "UpdateASet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Projects Project Sets Set",
+                "description": "Get a Set",
+                "operationId": "GetASet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Projects Project Sets Set",
+                "description": "Delete a set. Its documents are removed from it but not deleted.",
+                "operationId": "DeleteASetItsDocumentsAreRemovedFromItButNotDeleted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/{set_id}\/content": {
+            "get": {
+                "summary": "Get Projects Project Sets Set Content",
+                "description": "Get Set content",
+                "operationId": "GetSetContent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    },
+                    {
+                        "name": "exclude_details",
+                        "in": "query",
+                        "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/{set_id}\/content\/get": {
+            "post": {
+                "summary": "Post Projects Project Sets Set Content Get",
+                "description": "Get Set content",
+                "operationId": "GetSetContent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    },
+                    {
+                        "name": "exclude_details",
+                        "in": "query",
+                        "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/{set_id}\/content\/add": {
+            "post": {
+                "summary": "Post Projects Project Sets Set Content Add",
+                "description": "Add document version to Set",
+                "operationId": "AddDocumentVersionToSet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/{set_id}\/content\/remove": {
+            "post": {
+                "summary": "Post Projects Project Sets Set Content Remove",
+                "description": "Remove document versions from a Set",
+                "operationId": "RemoveDocumentVersionsFromASet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/current\/content": {
+            "get": {
+                "summary": "Get Projects Project Sets Current Content",
+                "description": "Get Set content",
+                "operationId": "GetSetContent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    },
+                    {
+                        "name": "exclude_details",
+                        "in": "query",
+                        "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/current\/content\/get": {
+            "post": {
+                "summary": "Post Projects Project Sets Current Content Get",
+                "description": "Get Set content",
+                "operationId": "GetSetContent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    },
+                    {
+                        "name": "exclude_details",
+                        "in": "query",
+                        "description": "Exclude details of the set content and it will only contain version urn in response when it\u2019s true. The default value is false."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/users\/{user_id}": {
+            "delete": {
+                "summary": "Delete Users User",
+                "description": "Delete an user",
+                "operationId": "DeleteAnUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "User id could be either a HQ user id or an Oxygen id"
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Patch Users User",
+                "description": "Update an user",
+                "operationId": "UpdateAnUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "user_id",
+                        "in": "path",
+                        "description": "User id could be either a HQ user id or an Oxygen id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/workflows\/{workflow_id}": {
+            "get": {
+                "summary": "Get Projects Project Workflows Workflow",
+                "description": "Get the workflow configuration by a given id",
+                "operationId": "GetTheWorkflowConfigurationByAGivenId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "workflow_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Patch Projects Project Workflows Workflow",
+                "description": "Update the workflow",
+                "operationId": "UpdateTheWorkflow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "workflow_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/workflows": {
+            "post": {
+                "summary": "Post Projects Project Workflows",
+                "description": "create a workflow with configuration",
+                "operationId": "CreateAWorkflowWithConfiguration",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Projects Project Workflows",
+                "description": "get workflows",
+                "operationId": "GetWorkflows",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    },
+                    {
+                        "name": "filter[initiator]",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filter[status]",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/templates": {
+            "get": {
+                "summary": "Get Projects Project Templates",
+                "description": "Get all the predefined workflows",
+                "operationId": "GetAllThePredefinedWorkflows",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/templates\/{template_id}": {
+            "get": {
+                "summary": "Get Projects Project Templates Template",
+                "description": "Get the predefined workflows by predefined workflow id",
+                "operationId": "GetThePredefinedWorkflowsByPredefinedWorkflowId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "template_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews": {
+            "post": {
+                "summary": "Post Projects Project Reviews",
+                "description": "create a review",
+                "operationId": "CreateAReview",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "force_create",
+                        "in": "query",
+                        "description": "force insufficient reviewer count check in group review steps."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Projects Project Reviews",
+                "description": "Get all reviews",
+                "operationId": "GetAllReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filter[workflowId]",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filter[status]",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filter[dueDate]",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "filter[initiatedBy]",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}": {
+            "get": {
+                "summary": "Get Projects Project Reviews Review",
+                "description": "Get a review",
+                "operationId": "GetAReview",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/terminate": {
+            "post": {
+                "summary": "Post Projects Project Reviews Review Terminate",
+                "description": "Update review status with terminate",
+                "operationId": "UpdateReviewStatusWithTerminate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/notifications": {
+            "post": {
+                "summary": "Post Projects Project Reviews Review Notifications",
+                "description": "send notifications",
+                "operationId": "SendNotifications",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/progress": {
+            "get": {
+                "summary": "Get Projects Project Reviews Review Progress",
+                "description": "Get all reviews",
+                "operationId": "GetAllReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/versions": {
+            "get": {
+                "summary": "Get Projects Project Reviews Review Versions",
+                "description": "get documents by review id",
+                "operationId": "GetDocumentsByReviewId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Patch Projects Project Reviews Review Versions",
+                "description": "update a bundle of documents status",
+                "operationId": "UpdateABundleOfDocumentsStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments": {
+            "post": {
+                "summary": "Post Projects Project Reviews Review Versions Version Urn Comments",
+                "description": "add a version comment",
+                "operationId": "AddAVersionComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "enhanced",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Projects Project Reviews Review Versions Version Urn Comments",
+                "description": "list all comments of the version",
+                "operationId": "ListAllCommentsOfTheVersion",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "supported fields: status, sequenceId, title, sentBy, createdAt, documentsCount"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments\/{comment_id}": {
+            "patch": {
+                "summary": "Patch Projects Project Reviews Review Versions Version Urn Comments Comment",
+                "description": "update a version comments",
+                "operationId": "UpdateAVersionComments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "comment_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete Projects Project Reviews Review Versions Version Urn Comments Comment",
+                "description": "(Soft) Delete a version comment",
+                "operationId": "SoftDeleteAVersionComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "comment_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/sets\/content\/remove": {
+            "post": {
+                "summary": "Post Projects Project Sets Content Remove",
+                "description": "Remove all the set info from document versions",
+                "operationId": "RemoveAllTheSetInfoFromDocumentVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}": {
+            "patch": {
+                "summary": "Patch Projects Project Reviews Review Versions Version Urn",
+                "description": "update document status",
+                "operationId": "UpdateDocumentStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version_urn",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/reviews\/{review_id}\/tasks\/{task_id}": {
+            "patch": {
+                "summary": "Patch Projects Project Reviews Review Tasks Task",
+                "description": "update a task status",
+                "operationId": "UpdateATaskStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "review_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "task_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/downloads\/sets\/{set_id}": {
+            "post": {
+                "summary": "Post Projects Project Downloads Sets Set",
+                "description": "Prepare download versions in specific set",
+                "operationId": "PrepareDownloadVersionsInSpecificSet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "set_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/downloads\/sets\/current": {
+            "post": {
+                "summary": "Post Projects Project Downloads Sets Current",
+                "description": "Prepare download versions in current set",
+                "operationId": "PrepareDownloadVersionsInCurrentSet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/downloads\/versions": {
+            "post": {
+                "summary": "Post Projects Project Downloads Versions",
+                "description": "Prepare download specific versions",
+                "operationId": "PrepareDownloadSpecificVersions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/downloads\/transmittals\/{transmittal_id}": {
+            "post": {
+                "summary": "Post Projects Project Downloads Transmittals Transmittal",
+                "description": "Prepare downloads for specified transmittal.",
+                "operationId": "PrepareDownloadsForSpecifiedTransmittal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "transmittal_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/downloads\/{download_id}": {
+            "get": {
+                "summary": "Get Projects Project Downloads Download",
+                "description": "Get specific download status",
+                "operationId": "GetSpecificDownloadStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "download_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/downloads\/{download_id}\/results": {
+            "get": {
+                "summary": "Get Projects Project Downloads Download Results",
+                "description": "Get specific download results",
+                "operationId": "GetSpecificDownloadResults",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "download_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "max to 200"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/downloads\/{download_id}\/results\/urls": {
+            "post": {
+                "summary": "Post Projects Project Downloads Download Results Urls",
+                "description": "Request the prepared download resource's urls",
+                "operationId": "RequestThePreparedDownloadResourcesUrls",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "download_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions\/{versionUrn}\/officeSessions": {
+            "post": {
+                "summary": "Post Projects Versions Versionurn Officesessions",
+                "description": "create a user session for office viewing or editing",
+                "operationId": "CreateAUserSessionForOfficeViewingOrEditing",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "versionUrn",
+                        "in": "path",
+                        "description": "either lineage urn or versioned file urn"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/ofa\/v1\/versions\/{versionUrn}\/officeSessions": {
+            "post": {
+                "summary": "Post Ofa V1 Versions Versionurn Officesessions",
+                "description": "create a user session for office viewing or editing",
+                "operationId": "CreateAUserSessionForOfficeViewingOrEditing",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "versionUrn",
+                        "in": "path",
+                        "description": "either lineage urn or versioned file urn"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/wopi\/files\/{lineageUrn}": {
+            "post": {
+                "summary": "Post Wopi Files Lineageurn",
+                "description": "The values of \"X-WOPI-Override\" and \"X-WOPI-OldLock\" determines what operation to use. If \"X-WOPI-Override\" is LOCK, The operation (Lock) locks a file for editing by the WOPI client application instance that requested the lock. If \"X-WOPI-Override\" is REFRESH_LOCK, The operation (RefreshLock) refreshes the lock on a file by resetting its automatic expiration timer to 30 minutes. If \"X-WOPI-Override\" is UNLOCK, The operation (Unlock) releases the lock on a file. If \"X-WOPI-Override\" is LOCK and \"",
+                "operationId": "TheValuesOfXwopioverrideAndXwopioldlockDeterminesWhatOperationToUseIfXwopioverrideIsLo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lineageUrn",
+                        "in": "path",
+                        "description": "same urn used to get the access token"
+                    },
+                    {
+                        "name": "access_token",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Wopi Files Lineageurn",
+                "description": "Get information about an office file, listed here for convience, the real base path should be like  https:\/\/wopi.ofa.b360.autodesk.com\/api\/v1\/",
+                "operationId": "GetInformationAboutAnOfficeFileListedHereForConvienceTheRealBasePathShouldBeLikeHt",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lineageUrn",
+                        "in": "path",
+                        "description": "same urn used to get the access token"
+                    },
+                    {
+                        "name": "access_token",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/wopi\/files\/{lineageUrn}\/contents": {
+            "post": {
+                "summary": "Post Wopi Files Lineageurn Contents",
+                "description": "Update the binary contents of the file. The real base path should be like  https:\/\/wopi.ofa.b360.autodesk.com\/api\/v1\/",
+                "operationId": "UpdateTheBinaryContentsOfTheFileTheRealBasePathShouldBeLikeHttpswopiofab360autodeskco",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lineageUrn",
+                        "in": "path",
+                        "description": "same urn used to get the access token"
+                    },
+                    {
+                        "name": "access_token",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Wopi Files Lineageurn Contents",
+                "description": "The operation retrieves a file from a host., listed here for convience, the real base path should be like http:\/\/wopi.bim360docs.autodesk.com\/api\/v1\/",
+                "operationId": "TheOperationRetrievesAFileFromAHostListedHereForConvienceTheRealBasePathShouldBeLi",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lineageUrn",
+                        "in": "path",
+                        "description": "same urn used to get the access token"
+                    },
+                    {
+                        "name": "access_token",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-create": {
+            "post": {
+                "summary": "Post Projects Project Folders Folder Permissions Batch Create",
+                "description": "Assign permissions to multiple users, roles, and companies for a `BIM 360 Document Management <https:\/\/docs.b360.autodesk.com\/>`_ folder.",
+                "operationId": "AssignPermissionsToMultipleUsersRolesAndCompaniesForABim360DocumentManagementHttpsdocs",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "folder_id",
+                        "in": "path",
+                        "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    },
+                    {
+                        "name": "permissions",
+                        "in": "body",
+                        "description": "A list of permission items to create in this folder."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-update": {
+            "post": {
+                "summary": "Post Projects Project Folders Folder Permissions Batch Update",
+                "description": "Updates the permissions assigned to multiple users, roles, and companies for a folder.",
+                "operationId": "UpdatesThePermissionsAssignedToMultipleUsersRolesAndCompaniesForAFolder",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "folder_id",
+                        "in": "path",
+                        "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    },
+                    {
+                        "name": "permissions",
+                        "in": "body",
+                        "description": "A list of permission items to create in this folder."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-delete": {
+            "post": {
+                "summary": "Post Projects Project Folders Folder Permissions Batch Delete",
+                "description": "Deletes all the permissions assigned to specified users, roles, and companies. To remove some of the permissions assigned to users, roles, and companies, use the `Update permissions <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-folders-folder_id-permissionsbatch-update-POST>`_ endpoint.",
+                "operationId": "DeletesAllThePermissionsAssignedToSpecifiedUsersRolesAndCompaniesToRemoveSomeOfThePe",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "folder_id",
+                        "in": "path",
+                        "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    },
+                    {
+                        "name": "permissions",
+                        "in": "body",
+                        "description": "A list of permission items to create in this folder."
+                    }
+                ]
+            }
+        },
+        "\/projects\/{project_id}\/folders\/{folder_id}\/permissions": {
+            "get": {
+                "summary": "Get Projects Project Folders Folder Permissions",
+                "description": "Retrieves information about the permissions assigned to users, roles and companies for a `BIM 360 Document Management <https:\/\/docs.b360.autodesk.com\/>`_ folder, including details about the name and the status.\n\nFor information about the different types of permissions you can assign to a user, role or company, see the `Help documentation <http:\/\/help.autodesk.com\/view\/BIM360D\/ENU\/?guid=GUID-2643FEEF-B48A-45A1-B354-797DAD628C37>`_.\n",
+                "operationId": "RetrievesInformationAboutThePermissionsAssignedToUsersRolesAndCompaniesForABim360Docu",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "folder_id",
+                        "in": "path",
+                        "description": "The ID (URN) of the folder.\n\nFor details about how to find the URN, follow the initial steps in the `Download a File <en\/docs\/data\/v2\/tutorials\/download-file\/>`_ tutorial.\n"
+                    },
+                    {
+                        "name": "x",
+                        "in": "header",
+                        "description": "In a two-legged authentication context, the app has access to all users specified by the administrator in the SaaS integrations UI. By providing this header, the API call will be limited to act on behalf of only the user specified.\n"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectId}\/versions\/{versionId}\/properties": {
+            "get": {
+                "summary": "Get Projects Versions Versionid Properties",
+                "description": "Get version properties by the urn",
+                "operationId": "GetVersionPropertiesByTheUrn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "path",
+                        "description": "versionUrn whose properties will be get."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Projects Versions Versionid Properties",
+                "description": "update version properties",
+                "operationId": "UpdateVersionProperties",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "versionId",
+                        "in": "path",
+                        "description": "versionUrn whose properties will be get."
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "The top folders and options info"
+                    }
+                ]
+            }
+        },
+        "\/account\/{account_id}": {
+            "delete": {
+                "summary": "Delete Account Account",
+                "description": "Delete an account",
+                "operationId": "DeleteAnAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "account_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/swagger": {
+            "x-swagger-pipe": {
+                "summary": "X-swagger-pipe Swagger",
+                "description": "",
+                "operationId": "",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ListOfProjectUserEntity": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ListOfUserEntity": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "BatchGetDocumentsRequest": {
+                "type": "object",
+                "properties": {
+                    "urns": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "BatchGetDocumentsResponse": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "BatchCopyRequest": {
+                "type": "object",
+                "properties": {
+                    "targetFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versions": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "BatchCopyResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "GetContentResponse": {
+                "type": "object"
+            },
+            "ContentSyncRequest": {
+                "type": "object",
+                "properties": {
+                    "topFolders": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "options": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ContentSyncResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "PostStorageRequest": {
+                "type": "object",
+                "properties": {
+                    "fileName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "PostStorageResponse": {
+                "type": "object",
+                "properties": {
+                    "objectId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "PhotosCreateRequest": {
+                "type": "object",
+                "properties": {
+                    "content": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "location": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "access": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reference": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "PhotosCreateResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "photoKey": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ContainerCreateRequest": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ContainerCreateResponse": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "GetProjectResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "accountId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "rootUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "containers": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "scopes": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateTransmittalRequest": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "documents": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateTransmittalResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "sequenceId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ListTransmittalsResponse": {
+                "type": "object",
+                "properties": {
+                    "transmittals": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "TransmittalUser": {
+                "type": "object",
+                "properties": {
+                    "userId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "isIndividualSelected": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "receivedTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "GetTransmittalResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "sequenceId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createdTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "receivedTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "documentsCount": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "GetTransmittalDocumentsResponse": {
+                "type": "object",
+                "properties": {
+                    "documents": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "GetTransmittalRecipientsResponse": {
+                "type": "object",
+                "properties": {
+                    "recipients": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentPatchRequest": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentEntity": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "fileName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "parentFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "tipVersionUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createUserName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastModifiedTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastModifiedUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastModifiedUserName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "deletedAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "deletedBy": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reserved": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reservedAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reservedUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reservedUserName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "moveState": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "parentFolder": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentVersionEntity": {
+                "type": "object",
+                "properties": {
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createUserName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastModifiedTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastModifiedUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastModifiedUserName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "storageUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "processState": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "entityType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "originalName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "action": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "extractionState": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "partialExtractionFailure": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reviewDeleted": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reviewId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reviewMatchedDocumentCount": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reviewNewDocumentCount": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reviewState": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "dmCommandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "bubbleUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "bubbleViewableGuid": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "bubbleViewableId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "bubbleViewableOrder": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "bubbleViewableResourceMimetype": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "bubbleViewableResourceUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "revisionNumber": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "titleBlockId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "titleBlockImage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "units": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "scaleFactor": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "customAttributes": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "sets": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "FolderPatchRequest": {
+                "type": "object",
+                "properties": {
+                    "viewOption": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "FolderEntity": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "parentFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "viewOption": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CustomAttribute": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "isSystem": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "systemName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentExportRequest": {
+                "type": "object",
+                "properties": {
+                    "includeMarkups": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "includeHyperlinks": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "urlType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "baseUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentExportResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentExportStatusResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentExportData": {
+                "type": "object",
+                "properties": {
+                    "versionUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "resourceId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "link": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CopyVersionToFolderRequest": {
+                "type": "object",
+                "properties": {
+                    "targetFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "copyFromVersionUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemDisplayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionDisplayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemPatchProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionPatchProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CopyVersionToItemRequest": {
+                "type": "object",
+                "properties": {
+                    "targetItemUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "copyFromVersionUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "forgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "patchProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CopyVersionToFolderResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "PromoteVersionRequest": {
+                "type": "object",
+                "properties": {
+                    "promoteFromVersionUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionPatchProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "PromoteVersionResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "MoveItemResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DeleteItemResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "LockItemResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "UnlockItemResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CopyVersionToItemResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateVersionResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateItemResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateFileResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ForgeFolderResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "wipData": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "RenameFolderRequest": {
+                "type": "object",
+                "properties": {
+                    "folderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "RenameFolderResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "wipData": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DeleteFolderRequest": {
+                "type": "object",
+                "properties": {
+                    "folderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DeleteFolderResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "wipData": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CheckFoldersDeletedRequest": {
+                "type": "object",
+                "properties": {
+                    "folderUrns": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CheckFoldersDeletedResponse": {
+                "type": "object",
+                "properties": {
+                    "folders": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateFolderRequest": {
+                "type": "object",
+                "properties": {
+                    "parentFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "forgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "extensionProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateFolderResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "wipData": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "RestoreFolderRequest": {
+                "type": "object",
+                "properties": {
+                    "folderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "folderName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "RestoreFolderResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "wipData": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "MoveFolderRequest": {
+                "type": "object",
+                "properties": {
+                    "folderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "targetFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateVersionRequest": {
+                "type": "object",
+                "properties": {
+                    "parentFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "targetItemUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "displayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "forgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "storage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "storageType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "mimeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "extensionProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "refs": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateItemRequest": {
+                "type": "object",
+                "properties": {
+                    "parentFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemDisplayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionDisplayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionStorage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionStorageType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "mimeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionExtensionProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemExtensionProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "refs": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "BatchUploadFileRequest": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "files": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versions": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "UploadFileRequest": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CreateFileRequest": {
+                "type": "object",
+                "properties": {
+                    "tempUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "parentFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemDisplayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionDisplayName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionForgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionStorage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionStorageType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionFileSize": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "mimeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "targetSet": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "titleblockUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "versionExtensionProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "itemExtensionProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "refs": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "WipMetadata": {
+                "type": "object",
+                "properties": {
+                    "versionedFile": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lineage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "WipProperty": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "XRefData": {
+                "type": "object",
+                "properties": {
+                    "versionUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "direction": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "forgeType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "activeDepth": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "extensionProperties": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetPostRequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "issuanceDate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DeleteItemRequest": {
+                "type": "object",
+                "properties": {
+                    "itemUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "LockItemRequest": {
+                "type": "object",
+                "properties": {
+                    "itemUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "UnlockItemRequest": {
+                "type": "object",
+                "properties": {
+                    "itemUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "MoveItemRequest": {
+                "type": "object",
+                "properties": {
+                    "sourceItemUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "targetFolderUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetPatchRequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "issuanceDate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetEntity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "issuanceDate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createUser": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createUserName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "updateUser": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "updateUserName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DeleteSetResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetEntityWithAction": {
+                "type": "object"
+            },
+            "SetCollection": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetContentCollection": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetContentEntity": {
+                "type": "object",
+                "properties": {
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetContentPostRequest": {
+                "type": "object",
+                "properties": {
+                    "documents": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SetContentPostResponse": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "TopLevelFolderCollection": {
+                "type": "object",
+                "properties": {
+                    "topLevelFolders": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "UserPatchRequest": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ProjectUserEntity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "eaUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "oxygenId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "companyId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "roleIds": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "nickname": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "firstName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "profileImg_20": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "profileImg_50": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastLoginTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "UserEntity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "eaUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "oxygenId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "company": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "nickname": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "firstName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "profileImg_20": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "profileImg_50": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "lastLoginTime": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ApiError": {
+                "type": "object"
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "detail": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "WorkflowPatchRequest": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "approvalOptions": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "steps": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "rules": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "descriptiveLanguage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Workflow": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "templateId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "approvalOptions": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "steps": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "rules": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "descriptiveLanguage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "WorkflowVersions": {
+                "type": "object",
+                "properties": {
+                    "urns": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ApprovalOption": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "iconValue": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "buildIn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "WorkflowStep": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "duration": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "WorkflowRule": {
+                "type": "object",
+                "properties": {
+                    "taksId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "GroupReviewParams": {
+                "type": "object",
+                "properties": {
+                    "enabled": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "maxTaskNumber": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "completionCondition": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Candidates": {
+                "type": "object",
+                "properties": {
+                    "roles": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "users": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "companies": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "SimpleCandidate": {
+                "type": "object",
+                "properties": {
+                    "oxygenId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Task": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "roleName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "note": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "dueDate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "NewReview": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reviewName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "sequenceId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "nextDueDate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "activeTasks": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Review": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "sequenceId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "reviewName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "actionBy": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "dueDate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "currentStep": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "activeTasks": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "tasks": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "documents": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "documentsStatus": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Comment": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "taskId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "taskKey": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "taskName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "updatedAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "deleteAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "CommentsMetadata": {
+                "type": "object",
+                "properties": {
+                    "createdBy": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "commentsCount": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ReviewProgress": {
+                "type": "object",
+                "properties": {
+                    "taskId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "taskKey": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "stepId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "roleName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "taskName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "claimedBy": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "actionBy": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "taskFinishDate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "note": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "hidden": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "eaUserId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "oxygenId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "roles": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Role": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "oxygenId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "eaRoleId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Pagination": {
+                "type": "object",
+                "properties": {
+                    "limit": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "totalResults": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadOptions": {
+                "type": "object",
+                "properties": {
+                    "urlType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "baseUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "includeCallouts": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "includeMarkups": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "sendEmail": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "mergePdf": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "sortBy": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadPostRequest": {
+                "type": "object"
+            },
+            "DownloadSpecificVersionsPostRequest": {
+                "type": "object",
+                "properties": {
+                    "documents": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DocumentsContentEntity": {
+                "type": "object",
+                "properties": {
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadResultsGetResponse": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadResultEntity": {
+                "type": "object",
+                "properties": {
+                    "versionUrn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "fileName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadPostResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadGetResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "createdAt": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadUrlPostRequest": {
+                "type": "object",
+                "properties": {
+                    "resources": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadUrlPostResponse": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DownloadUrlResponseEntity": {
+                "type": "object",
+                "properties": {
+                    "fileName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ActionBy": {
+                "type": "object"
+            },
+            "OfficeUserSessionRequest": {
+                "type": "object",
+                "properties": {
+                    "sessionType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbBrandName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbBrandUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbFolderName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbFolderUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "hostViewUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "hostEditUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "hideEdit": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "OfficeUserSessionResponse": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "accessToken": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "accessTokenTTL": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "actionUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "WOPISrc": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "FileInformationResponse": {
+                "type": "object",
+                "properties": {
+                    "BaseFileName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "OwnerId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "Size": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "userId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "UserFriendlyName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "Version": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "UserCanWrite": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "SupportsUpdate": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "SupportsLocks": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "UserCanNotWriteRelative": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "LicenseCheckForEditIsEnabled": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "EditModePostMessage": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "hostViewUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "hostEditUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbBrandName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbBrandUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbFolderName": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "breadcrumbFolderUrl": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "PostMessageOrigin": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "BatchCreatePermissionsResponse": {
+                "type": "object",
+                "properties": {
+                    "results": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "Permission": {
+                "type": "object",
+                "properties": {
+                    "autodeskId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "userType": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "subjectStatus": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "inheritActions": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "PermissionHierarchyAction": {
+                "type": "object",
+                "properties": {
+                    "urn": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "actions": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "EntityProperty": {
+                "type": "object",
+                "properties": {
+                    "units": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    },
+                    "scaleFactor": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DeleteProjectResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "DeleteAccountResponse": {
+                "type": "object",
+                "properties": {
+                    "commandId": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ProjectSettingRequest": {
+                "type": "object",
+                "properties": {
+                    "publicSharingEnabled": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            },
+            "ProjectSettingResponse": {
+                "type": "object",
+                "properties": {
+                    "publicSharingEnabled": {
+                        "description": "",
+                        "type": "x-swagger-pipe"
+                    }
+                }
+            }
+        }
+    }
+}
