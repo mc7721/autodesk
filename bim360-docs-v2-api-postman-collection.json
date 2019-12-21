@@ -1,5 +1,5 @@
 {
-    "id": "3e49152870c76a36e7e262683b7eabea",
+    "id": "ff0248e69ae20cf1809cab9e2e0a9619",
     "name": "[BIM360] Docs V2 API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "c3bc8a72079113da58234d0fad6c5ff9",
+            "id": "27c72dce565c7ec080f71c930db98fdb",
             "name": "Get Projects Users",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/users",
             "description": "Get users of the given company, filter out pending users, default sort by name",
@@ -79,11 +79,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "90d7a0f92c1c5b38d6a8248d0d625702",
+            "id": "830cc0547ca0cf5e8282fcb819268b73",
             "name": "Get Projects Folders Folder Urn Parents",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders\/{folder_urn}\/parents",
             "description": "Get parent folders",
@@ -124,11 +124,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "3747bcaf4879cabe011b7695b42003e9",
+            "id": "c95cc58bf0e45161a07ddb3a0144621a",
             "name": "Post Projects Content Sync",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/content:sync",
             "description": "Creates a command to fetch contents by top folders from Wip asynchronously",
@@ -162,11 +162,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "da2a69c3fb392bd0bf50397f2c7c351a",
+            "id": "947730b286d052a9ac4c6c9ba624126e",
             "name": "Get Projects Content Sync Commandid",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/content-sync\/{commandId}",
             "description": "Fetch content cache by command id",
@@ -214,11 +214,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "ce732198efc94d6ce14cf3e42087fa09",
+            "id": "28df68fffd78173e41dd98d7aa575152",
             "name": "Post Projects Storage",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/storage",
             "description": "Creates a storage location in the OSS where data can be uploaded to",
@@ -252,11 +252,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "2a769e808d81e5de7d1b33d342570b0e",
+            "id": "ab2f50ab17eed4a6d815e0ef282dc1c2",
             "name": "Post Projects Photos",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/photos",
             "description": "Create a new photo in photo container",
@@ -290,11 +290,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "b9fff0b98210af888c7fe5d73b87b446",
+            "id": "63d4e52e9fcfc367af38f1156db2351a",
             "name": "Post Projects Containers",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/containers",
             "description": "Create a container by type for a project",
@@ -328,11 +328,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "2fd97d0681eb87cdf4f64208852658e6",
+            "id": "9ec1ea076f03dc41349c915adad56f65",
             "name": "Get Projects Project",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}",
             "description": "Get a project",
@@ -359,11 +359,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "47d0b71b9ecdd32d800efa1a087ac3ff",
+            "id": "07948e30349ced849ae6a54c57ccbab4",
             "name": "Delete Projects Project",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}",
             "description": "Delete a project",
@@ -390,11 +390,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "150013db3120b84d7985a1c57ba2de65",
+            "id": "4193bdc5a5a4cadd753874b06640eac0",
             "name": "Patch Projects Settings",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/settings",
             "description": "Project-level settings for admins.",
@@ -428,11 +428,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "d65a6699f87ee88920d7abc9650532bc",
+            "id": "64df2b89a49c35ee9f9b63fbc3048be1",
             "name": "Post Projects Transmittals",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals",
             "description": "Create a transmittal",
@@ -466,11 +466,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "22151dfc075f8ba8d85a7a9c4efd6a17",
+            "id": "11c9b1f6442151c81c0ed3fb9df5a70f",
             "name": "Get Projects Transmittals",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals",
             "description": "List transmittals",
@@ -539,11 +539,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "9e66307482350de5b01c5ce09c2ab078",
+            "id": "61f3625824406c0e1df2fdc921736606",
             "name": "Get Projects Transmittals Transmittalid",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals\/{transmittalId}",
             "description": "Get a transmittal by id",
@@ -577,11 +577,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "add07ac403f4d8b69187f619bfc95dd3",
+            "id": "c8dabcecb9274f0039ab51661bee7ca4",
             "name": "Get Projects Transmittals Transmittalid Documents",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals\/{transmittalId}\/documents",
             "description": "List documents in a transmittal",
@@ -636,11 +636,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "aa4b6ea9a55adda885576bb6b65dc12d",
+            "id": "6c6b986c7bd7767cdb928de99afe9cc8",
             "name": "Get Projects Transmittals Transmittalid Recipients",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/transmittals\/{transmittalId}\/recipients",
             "description": "List recipients in a transmittal",
@@ -688,11 +688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "52077d58735534d110a509c24dc3b88f",
+            "id": "3671d73bec2eb86059b1df49b6249e59",
             "name": "Post Projects Project Versions Version Exports",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions\/{version_id}\/exports",
             "description": "Exports a single page from an uploaded PDF file into a new PDF file. You can also export the page's markups (annotations) and hyperlinks.\n\nNote that you can only export a page from a PDF file that was uploaded to the Plans folder or to a folder nested under the Plans folder (``attributes.extension.data.actions: SPLIT``). BIM 360 Document Management splits these files into separate pages (sheets) when they are uploaded, and assigns a separate ID to each page. You can identify exportable PDF files",
@@ -740,11 +740,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "5602e1a6ef8d0fb2ab9353d0c0da88f0",
+            "id": "d03efe6cda9dd454c4d48101ee04f2c5",
             "name": "Post Projects Project Versions Batchget",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions:batchGet",
             "description": "Batch get documents",
@@ -778,11 +778,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "223fecce7622104bb096043581789d6f",
+            "id": "6199d316525447833692be3f54f9db25",
             "name": "Get Projects Project Versions Version Exports Export",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions\/{version_id}\/exports\/{export_id}",
             "description": "Returns the status of a PDF export job, as well as data you need to download the exported file when the export is complete.\n\nThe `POST projects\/:project_id\/versions\/:version_id\/exports <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-versions-version_id-exports-POST>`_ endpoint initiates the job, and returns a job ID to be used in this endopint.\n\nTo download the exported PDF file after the job is complete, use `GET :urn\/manifest\/:derivativeurn <\/en\/docs\/model-derivative",
@@ -830,11 +830,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "1734614a4076a1bc59f7ee0bbc182e0c",
+            "id": "d67f03ae52a8114cadb328b575d34450",
             "name": "Patch Projects Project Versions Version Urn",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions\/{version_urn}",
             "description": "Update properties of one document",
@@ -875,11 +875,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "15ef449e08738f58c5877490a0794f9e",
+            "id": "9eba0aa27a0a57afb3c39a77d682727d",
             "name": "Post Projects Project Versions Upload",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions:upload",
             "description": "Upload one document (can be one of [files|items|versions]) <figure role=\"img\" aria-labelledby=\"cow-caption\"> <figcaption id=\"cow-caption\"> GET \/projects\/{project_id}\/commands\/{command_id} response example: <\/figcaption> <pre> { \"data\": { \"type\": \"commands\", \"id\": \"string\", \"attributes\": { \"extension\": { \"type\": \"commands:autodesk.bim360:files.upload\", \"version\": \"1.0.0\", \"schema\": { \"href\": \"https:\/\/developer.api.autodesk.com\/schema\/v1\/versions\/commands:autodesk.bim360:files.upload-1.0.0\" } }, \"",
@@ -913,11 +913,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "2cfbdca3614ac84eb16c1b8719935642",
+            "id": "4fdb4a812cb427712954d1c2688b4036",
             "name": "Post Projects Project Versions Batchupload",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/versions:batchUpload",
             "description": "Upload documents (can be one of files|items|versions) <figure role=\"img\" aria-labelledby=\"cow-caption\"> <figcaption id=\"cow-caption\"> GET \/projects\/{project_id}\/commands\/{command_id} response example: <\/figcaption> <pre> { \"data\": { \"type\": \"commands\", \"id\": \"string\", \"attributes\": { \"extension\": { \"type\": \"commands:autodesk.bim360:files.upload\", \"version\": \"1.0.0\", \"schema\": { \"href\": \"https:\/\/developer.api.autodesk.com\/schema\/v1\/versions\/commands:autodesk.bim360:files.upload-1.0.0\" } }, \"statu",
@@ -951,11 +951,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "d336148ce6228d226e701ad854ba15c5",
+            "id": "77a2c5e478cf5eec29a100909088e934",
             "name": "Patch Projects Project Folders Folder Urn",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_urn}",
             "description": "Update attributes of one Folder",
@@ -1003,11 +1003,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "77366bb1673d026282f64b6671d20ec6",
+            "id": "b3b544bf7770db56ef7355b07d5a9a49",
             "name": "Post Projects Versions Forgecopytofolder",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCopyToFolder",
             "description": "Copy a version to a folder as new item and first version",
@@ -1041,11 +1041,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "2a243259ce731604701a40fc981ae85d",
+            "id": "a74dc244fce9fbe130320a31b979e4d4",
             "name": "Post Projects Versions Forgecopytoitem",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCopyToItem",
             "description": "Copy a version to a folder as new version on existing item",
@@ -1079,11 +1079,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "63dbdc1ada8d8a59c0d27f3e540ceab2",
+            "id": "d78b15caa83398f41e614b1f4199e75e",
             "name": "Post Projects Versions Forgepromote",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgePromote",
             "description": "Promote previous version as latest version on the same item. Use for immutable rename or to restore deleted version",
@@ -1117,11 +1117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "7b13303096774119f55434b293cf04eb",
+            "id": "0dd20647a79cf2d75445c5d472f1a21e",
             "name": "Post Projects Folders Forger Rename",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeRename",
             "description": "Rename a folder",
@@ -1155,11 +1155,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "81f530d56747da402833cd8af40b7129",
+            "id": "a58ff44cc5fbeecd01a97f14457438e8",
             "name": "Post Projects Folders Forgedelete",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeDelete",
             "description": "Delete a folder",
@@ -1193,11 +1193,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "f5910803b6a9a13d8c017974062b9068",
+            "id": "5bb2d26658f9c2a1fd63744397c87b24",
             "name": "Post Projects Folders Checkdeleted",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:checkDeleted",
             "description": "Check deleted statuses for specified folders",
@@ -1231,11 +1231,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "5c4f17703d3cf7a164a61a26e483a777",
+            "id": "087f2633f9877e8cde15e60afbe60dc8",
             "name": "Post Projects Folders Forgecreate",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeCreate",
             "description": "Create a folder",
@@ -1269,11 +1269,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "3c2ef3900deefcabf431a292050aa586",
+            "id": "76314acbb8a9883b86a48c17a6eb61da",
             "name": "Post Projects Folders Forgemove",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeMove",
             "description": "Move one folder including its content to a new parent folder",
@@ -1307,11 +1307,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "3de21db6cac16f7bf85226cc455b5ffc",
+            "id": "e00a57fc7adba33c86feb394ae0385eb",
             "name": "Post Projects Versions Forgecreate",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCreate",
             "description": "Create a new version on an existing item",
@@ -1345,11 +1345,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "6e4d34b02816421229cb19c55e411cd6",
+            "id": "da07fb05074f0df81f5b9f4e08ec89a4",
             "name": "Post Projects Items Forgecreate",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeCreate",
             "description": "Create a new item with its first version",
@@ -1383,11 +1383,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "39beb42a600a97c71a7a6aa0808d80b3",
+            "id": "cd9300010b4e9e9a939f3ba5b394e65a",
             "name": "Post Projects Versions Forgecreateandnoprocess",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:forgeCreateAndNoProcess",
             "description": "Create a new version on an existing item without translation",
@@ -1421,11 +1421,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "53e2cd2f62576efe51866c83cbe92507",
+            "id": "e60f33402be2fc287df5f0d98945a6b5",
             "name": "Post Projects Items Forgecreateandnoprocess",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeCreateAndNoProcess",
             "description": "Create a new item with its first version without translation",
@@ -1459,11 +1459,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "adba489aec0f5ef74836d66bf01b7cc6",
+            "id": "bfc2635efb67fa0109727886591823f0",
             "name": "Post Projects Folders Forgerestore",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/folders:forgeRestore",
             "description": "Restore a folder",
@@ -1497,11 +1497,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "c347652f213a2e0aa83e59a95c88135e",
+            "id": "884296867f4ef99d369e904f49e879ec",
             "name": "Post Projects Versions Batchcopy",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions:batchCopy",
             "description": "Batch copy versioned files",
@@ -1535,11 +1535,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "ec1be2d13fb16cb2773c1ec81af69b2b",
+            "id": "a7c893c6924db00a1aaa996800719f2c",
             "name": "Post Projects Items Forgedelete",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeDelete",
             "description": "delete a document",
@@ -1573,11 +1573,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "0101ac74b81877f8471f74ab6acccf65",
+            "id": "fcf55fedb6394a0d56fef6b8def7bee5",
             "name": "Post Projects Project Items Forgemove",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/items:forgeMove",
             "description": "move a document to a given folder",
@@ -1611,11 +1611,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "0c82f2b13ee81486e9d80411ec5453c1",
+            "id": "9e5cfb081a3ad09ee4be1955b1f3691c",
             "name": "Post Projects Items Forgelock",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeLock",
             "description": "lock a document",
@@ -1649,11 +1649,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "cdd66990f477156e3b1ac60dbfdfa6e8",
+            "id": "31b43b7b04bc6e19a69561e7bd64dae5",
             "name": "Post Projects Items Forge Unlock",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/items:forgeUnlock",
             "description": "unlock a document",
@@ -1687,11 +1687,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "e1141a7e0e1b064d93c7e930c5e05f80",
+            "id": "c5b390f636a5616d4dc916b2ff7a82e9",
             "name": "Get Projects Project Sets",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets",
             "description": "Sets list",
@@ -1739,11 +1739,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "048178eec0da59ae68f38902f4fee83f",
+            "id": "97ce61f65782537d694b066ab2202a6d",
             "name": "Post Projects Project Sets",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets",
             "description": "Create a Set",
@@ -1777,11 +1777,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "8ffafd4356f4c7eabda403d3f005c0f9",
+            "id": "df6c2e75036dfa92db249ac597c8187c",
             "name": "Patch Projects Project Sets Set",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}",
             "description": "Update a Set",
@@ -1822,11 +1822,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "8a5b2498b1f5f7bb84c269ed73028a65",
+            "id": "007c4db5c7ea4972a0879643dbf83b33",
             "name": "Get Projects Project Sets Set",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}",
             "description": "Get a Set",
@@ -1860,11 +1860,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "e1ea8d0e7fef3f11ecdbb1bc69566c30",
+            "id": "1c5e2aab17f4f410490c8bdad821feff",
             "name": "Delete Projects Project Sets Set",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}",
             "description": "Delete a set. Its documents are removed from it but not deleted.",
@@ -1898,11 +1898,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "85812d09c721c750a9636419ed7693a0",
+            "id": "56fd580306c647399290da09937ba79c",
             "name": "Get Projects Project Sets Set Content",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content",
             "description": "Get Set content",
@@ -1950,11 +1950,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "1e3eb403aaddf0dd38dda42b88a624ad",
+            "id": "694d066a03f3e42f465c908b570e1bbe",
             "name": "Post Projects Project Sets Set Content Get",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content\/get",
             "description": "Get Set content",
@@ -2009,11 +2009,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "df58aff92ebacd828c409c47f5fb2182",
+            "id": "456009a9576828592455ea2fbc8b2d56",
             "name": "Post Projects Project Sets Set Content Add",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content\/add",
             "description": "Add document version to Set",
@@ -2054,11 +2054,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "55f568eb602fca8234fe26d3532943f0",
+            "id": "133418ea3267ba68ba3ddfb35b2b9fdb",
             "name": "Post Projects Project Sets Set Content Remove",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/{set_id}\/content\/remove",
             "description": "Remove document versions from a Set",
@@ -2099,11 +2099,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "bd6222a7fd3c57bd8a9e89f88f1284e0",
+            "id": "d77199b4660b539df146196b8e36e037",
             "name": "Get Projects Project Sets Current Content",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/current\/content",
             "description": "Get Set content",
@@ -2144,11 +2144,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "611ed032475821c02b1e5a6dfb920f31",
+            "id": "2ad8104001ca7b77655ebbc4a15e8f1a",
             "name": "Post Projects Project Sets Current Content Get",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/current\/content\/get",
             "description": "Get Set content",
@@ -2196,11 +2196,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "82fb66c86fd0956e976731e023d024c8",
+            "id": "caf2edd3f17afcde1f570d3c5b064b29",
             "name": "Delete Users User",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/users\/{user_id}",
             "description": "Delete an user",
@@ -2227,11 +2227,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "e25df2167b31f8cfcc78df99683d0c79",
+            "id": "e73c6566eeed2f1b75dbccd405d99439",
             "name": "Patch Users User",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/users\/{user_id}",
             "description": "Update an user",
@@ -2265,11 +2265,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "e4953e12ac2202a90cb167aea11f4360",
+            "id": "ed5bf626e09bdfd77ededd6a61edb7c5",
             "name": "Get Projects Project Workflows Workflow",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows\/{workflow_id}",
             "description": "Get the workflow configuration by a given id",
@@ -2303,11 +2303,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "b112e970ce813a0d43f47e8297742ca6",
+            "id": "5c4a86a7192520e99777605a2d168ac3",
             "name": "Patch Projects Project Workflows Workflow",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows\/{workflow_id}",
             "description": "Update the workflow",
@@ -2348,11 +2348,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "009b16853e48038b75bd1b2b951d69b7",
+            "id": "ba724d310ff2e835c4205a60bf4974a3",
             "name": "Post Projects Project Workflows",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows",
             "description": "create a workflow with configuration",
@@ -2386,11 +2386,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "3b78711ceecaa042544b412de2805524",
+            "id": "ed47ad196a4f3a773b110f0ed06ac537",
             "name": "Get Projects Project Workflows",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/workflows",
             "description": "get workflows",
@@ -2438,11 +2438,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "7b7ea788d8d3c9cad98febc087a3eefe",
+            "id": "2f9209b61452b6d4dc849d1483bddc88",
             "name": "Get Projects Project Templates",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/templates",
             "description": "Get all the predefined workflows",
@@ -2469,11 +2469,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "cf42023112979e0013e70c9983f872e0",
+            "id": "47e04dc62653d54cc937d21675fa4475",
             "name": "Get Projects Project Templates Template",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/templates\/{template_id}",
             "description": "Get the predefined workflows by predefined workflow id",
@@ -2507,11 +2507,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "17160219c4d47f5ef022ac51cac159e8",
+            "id": "58971168100e23a7b5a3fe51ddbde9c7",
             "name": "Post Projects Project Reviews",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews",
             "description": "create a review",
@@ -2552,11 +2552,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "c4f510d0527414a960eb40a7cb8a0e96",
+            "id": "a450438d60d22bb70d0636016f091a75",
             "name": "Get Projects Project Reviews",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews",
             "description": "Get all reviews",
@@ -2632,11 +2632,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "39214fa287bd210040ba09474e7a6bf7",
+            "id": "a606b83404c2fa67d8502e0586a6e68b",
             "name": "Get Projects Project Reviews Review",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}",
             "description": "Get a review",
@@ -2670,11 +2670,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "87ec3918884b51c56579994728c4caf4",
+            "id": "c82b72d5955c433302b6d9821036ca14",
             "name": "Post Projects Project Reviews Review Terminate",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/terminate",
             "description": "Update review status with terminate",
@@ -2715,11 +2715,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "de4fc4434ad59cb079758a19829821bc",
+            "id": "b28a6cea1510441c3bb0c2b4f3d05bb7",
             "name": "Post Projects Project Reviews Review Notifications",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/notifications",
             "description": "send notifications",
@@ -2760,11 +2760,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "2c6930d47517cacbc3911fcb0f501f8d",
+            "id": "0e8137b50c879dcdb7bb81035169da98",
             "name": "Get Projects Project Reviews Review Progress",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/progress",
             "description": "Get all reviews",
@@ -2798,11 +2798,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "9708c6db26e26a97d26a61dfcaaad8a2",
+            "id": "63b1a73c488a31589be976775a9b55c2",
             "name": "Get Projects Project Reviews Review Versions",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions",
             "description": "get documents by review id",
@@ -2836,11 +2836,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "6e0916dd0af9eb2ef7ff7cf1ee6ba776",
+            "id": "a9e08d057724840b0b68aa24e349bbf0",
             "name": "Patch Projects Project Reviews Review Versions",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions",
             "description": "update a bundle of documents status",
@@ -2881,11 +2881,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "8774f1936d70e6beb801d3dfc8815641",
+            "id": "3d88ac53cb88fd43f0e2564217c77704",
             "name": "Post Projects Project Reviews Review Versions Version Urn Comments",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments",
             "description": "add a version comment",
@@ -2940,11 +2940,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "a97b30b70b8de438b67348644d75e482",
+            "id": "084bc0b2d6ae99a94f96272d28d38940",
             "name": "Get Projects Project Reviews Review Versions Version Urn Comments",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments",
             "description": "list all comments of the version",
@@ -3006,11 +3006,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "e75cb2358e7226abed9068e5e70c5fed",
+            "id": "3f25a1d7b479fc4a7ad85db6500c50a4",
             "name": "Patch Projects Project Reviews Review Versions Version Urn Comments Comment",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments\/{comment_id}",
             "description": "update a version comments",
@@ -3065,11 +3065,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "f513f7ec88a51c41eca7d1558b1a358e",
+            "id": "50f2efa73d017f5f14a3a96f272ab3eb",
             "name": "Delete Projects Project Reviews Review Versions Version Urn Comments Comment",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}\/comments\/{comment_id}",
             "description": "(Soft) Delete a version comment",
@@ -3117,11 +3117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "56721dec5cd93599a19124cb6be71c3e",
+            "id": "c8e967de27a97473ff237d60700892e8",
             "name": "Post Projects Project Sets Content Remove",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/sets\/content\/remove",
             "description": "Remove all the set info from document versions",
@@ -3155,11 +3155,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "975b5a8b96ad02cc703e579dd423aca1",
+            "id": "2b4ea955691fcdaf8ecbc2741e8616c9",
             "name": "Patch Projects Project Reviews Review Versions Version Urn",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/versions\/{version_urn}",
             "description": "update document status",
@@ -3207,11 +3207,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "f4635dc3f7a6d4544be42e0724059901",
+            "id": "b98b002652e6020e55311a656f736921",
             "name": "Patch Projects Project Reviews Review Tasks Task",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/reviews\/{review_id}\/tasks\/{task_id}",
             "description": "update a task status",
@@ -3259,11 +3259,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "31fadc5faff5cf6e5384cf0c2a67a775",
+            "id": "9524cb953b4cb514eddc8d64c1a80680",
             "name": "Post Projects Project Downloads Sets Set",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/sets\/{set_id}",
             "description": "Prepare download versions in specific set",
@@ -3304,11 +3304,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "4751103ee76dcb5e019aeee8e02598e7",
+            "id": "ffc6180ef1f7f60824a1ccc57353df16",
             "name": "Post Projects Project Downloads Sets Current",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/sets\/current",
             "description": "Prepare download versions in current set",
@@ -3342,11 +3342,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "a6587bfab14322f9bd9c12d660e3e782",
+            "id": "48e191eb12bb279ed69e7e9ceaff54b2",
             "name": "Post Projects Project Downloads Versions",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/versions",
             "description": "Prepare download specific versions",
@@ -3380,11 +3380,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "fbcba42c2e33228ec9a65761e5b8c2fd",
+            "id": "9ce118b0b9f5ddf225d1e865f80c77f7",
             "name": "Post Projects Project Downloads Transmittals Transmittal",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/transmittals\/{transmittal_id}",
             "description": "Prepare downloads for specified transmittal.",
@@ -3425,11 +3425,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "990c416a55513a3396d7f19dd15a7a01",
+            "id": "be5af17caeae0399748afc8eeb69106e",
             "name": "Get Projects Project Downloads Download",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/{download_id}",
             "description": "Get specific download status",
@@ -3463,11 +3463,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "f7398d8f762b1bb8b5c5c533f5d626f2",
+            "id": "5ef86e4ff4fbb375ec8ac0e31ecd822b",
             "name": "Get Projects Project Downloads Download Results",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/{download_id}\/results",
             "description": "Get specific download results",
@@ -3515,11 +3515,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "9010b40064ff75799f6e5a66cdbc0d76",
+            "id": "2f69bee37b480d169e9b57f8e2001d97",
             "name": "Post Projects Project Downloads Download Results Urls",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/downloads\/{download_id}\/results\/urls",
             "description": "Request the prepared download resource's urls",
@@ -3560,11 +3560,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "5a9568f469ec8c5db4756bf7df007120",
+            "id": "ec3f628f8f24e00091b0fbf0da34f80c",
             "name": "Post Projects Versions Versionurn Officesessions",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions\/{versionUrn}\/officeSessions",
             "description": "create a user session for office viewing or editing",
@@ -3605,11 +3605,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "32657e84a8f5cccc13876db855f0d52c",
+            "id": "b0e7cfe1a519554b71739b51ae10b2bb",
             "name": "Post Ofa V1 Versions Versionurn Officesessions",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/ofa\/v1\/versions\/{versionUrn}\/officeSessions",
             "description": "create a user session for office viewing or editing",
@@ -3643,11 +3643,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "f37e8cbaacd49c6c561255732e8f31a1",
+            "id": "d18b7cd6e13daff1d1a206179a9198a0",
             "name": "Post Wopi Files Lineageurn",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}",
             "description": "The values of \"X-WOPI-Override\" and \"X-WOPI-OldLock\" determines what operation to use. If \"X-WOPI-Override\" is LOCK, The operation (Lock) locks a file for editing by the WOPI client application instance that requested the lock. If \"X-WOPI-Override\" is REFRESH_LOCK, The operation (RefreshLock) refreshes the lock on a file by resetting its automatic expiration timer to 30 minutes. If \"X-WOPI-Override\" is UNLOCK, The operation (Unlock) releases the lock on a file. If \"X-WOPI-Override\" is LOCK and \"",
@@ -3688,11 +3688,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "4d6ab5ded590082251a982a8c04c21f6",
+            "id": "65ef9c6f38a295c0ba1663df9143cea4",
             "name": "Get Wopi Files Lineageurn",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}",
             "description": "Get information about an office file, listed here for convience, the real base path should be like  https:\/\/wopi.ofa.b360.autodesk.com\/api\/v1\/",
@@ -3726,11 +3726,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "5f0cd95094ae124cef9958e78ba0a042",
+            "id": "f7ca84361f26c3327bce459d26e41bf8",
             "name": "Post Wopi Files Lineageurn Contents",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}\/contents",
             "description": "Update the binary contents of the file. The real base path should be like  https:\/\/wopi.ofa.b360.autodesk.com\/api\/v1\/",
@@ -3778,11 +3778,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "3e739cc5a8a8187db42c6c12daaf2c9b",
+            "id": "33e99c40a24d1932804dfca3cfb3d4fc",
             "name": "Get Wopi Files Lineageurn Contents",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/wopi\/files\/{lineageUrn}\/contents",
             "description": "The operation retrieves a file from a host., listed here for convience, the real base path should be like http:\/\/wopi.bim360docs.autodesk.com\/api\/v1\/",
@@ -3823,11 +3823,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "5a66350d270cfa787d001307431b0ddf",
+            "id": "d87d74778eecb79919621f54629f0c9b",
             "name": "Post Projects Project Folders Folder Permissions Batch Create",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-create",
             "description": "Assign permissions to multiple users, roles, and companies for a `BIM 360 Document Management <https:\/\/docs.b360.autodesk.com\/>`_ folder.",
@@ -3875,11 +3875,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "2f2376b91d73024e9ae27c81f1fee09a",
+            "id": "6f69718e8ca37d0d401e74a03dc04ff7",
             "name": "Post Projects Project Folders Folder Permissions Batch Update",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-update",
             "description": "Updates the permissions assigned to multiple users, roles, and companies for a folder.",
@@ -3927,11 +3927,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "2dd378fdb1427bb58e83e9bfec45d045",
+            "id": "87db68384eafbf5f2b19bec1a51b72a5",
             "name": "Post Projects Project Folders Folder Permissions Batch Delete",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions:batch-delete",
             "description": "Deletes all the permissions assigned to specified users, roles, and companies. To remove some of the permissions assigned to users, roles, and companies, use the `Update permissions <\/en\/docs\/bim360\/v1\/reference\/http\/document-management-projects-project_id-folders-folder_id-permissionsbatch-update-POST>`_ endpoint.",
@@ -3979,11 +3979,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "5a9de3ef9c49156338e543eed6f73373",
+            "id": "9ef0f4de05c15fb34580e98712add1cc",
             "name": "Get Projects Project Folders Folder Permissions",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{project_id}\/folders\/{folder_id}\/permissions",
             "description": "Retrieves information about the permissions assigned to users, roles and companies for a `BIM 360 Document Management <https:\/\/docs.b360.autodesk.com\/>`_ folder, including details about the name and the status.\n\nFor information about the different types of permissions you can assign to a user, role or company, see the `Help documentation <http:\/\/help.autodesk.com\/view\/BIM360D\/ENU\/?guid=GUID-2643FEEF-B48A-45A1-B354-797DAD628C37>`_.\n",
@@ -4024,11 +4024,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "4a91446f05837c833b0fa3392b11bdd9",
+            "id": "1d65ddcec47de83950bbc11b449090e0",
             "name": "Get Projects Versions Versionid Properties",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions\/{versionId}\/properties",
             "description": "Get version properties by the urn",
@@ -4062,11 +4062,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "fbeddca5f9225c90db39c9cca446c1ed",
+            "id": "a322c8fc32d0b403ce97e156f5413d9f",
             "name": "Post Projects Versions Versionid Properties",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/projects\/{projectId}\/versions\/{versionId}\/properties",
             "description": "update version properties",
@@ -4107,11 +4107,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "540078984f9fbc8cab8ed96f2acf2e65",
+            "id": "a6ba85e28bbf59b6facbb3107b9ba495",
             "name": "Delete Account Account",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/account\/{account_id}",
             "description": "Delete an account",
@@ -4138,11 +4138,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         },
         {
-            "id": "0c4a8fcfdccea0d1cf6b94aa73f9a0d5",
+            "id": "f0b9a96bd8b06f4d7e89e812dc45e1a8",
             "name": "X-swagger-pipe Swagger",
             "url": "httpsdeveloper.api.autodesk.com\/dm\/v2\/swagger",
             "description": "",
@@ -4161,7 +4161,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "3e49152870c76a36e7e262683b7eabea",
+            "collectionId": "ff0248e69ae20cf1809cab9e2e0a9619",
             "rawModeData": ""
         }
     ]
