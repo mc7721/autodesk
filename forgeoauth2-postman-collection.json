@@ -1,5 +1,5 @@
 {
-    "id": "8406960bd6fadee1f320c325a5075ff6",
+    "id": "76a0905244eb92229e72344c03d5ce5b",
     "name": "Forge-oauth2",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "5143d81f98caaf59aadb65eb38435b9e",
+            "id": "cfde840368c99bd54b462a1aa1a5d01d",
             "name": "POST authenticate",
             "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/authenticate",
             "description": "Get a two-legged access token by providing your app's client ID and secret.\n",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "collectionId": "76a0905244eb92229e72344c03d5ce5b",
             "rawModeData": ""
         },
         {
-            "id": "6a577729306a9d0ec18142fa5fc9a48e",
+            "id": "536394db9e396d00e8227ab2b391e3cf",
             "name": "GET authorize",
             "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/authorize",
             "description": "This is the browser URL to redirect an end user to in order to acquire the user\u2019s consent for your app to access the specified resources.\nNote: You do not call this URL directly in your server code. See the Get a 3-Legged Token tutorial for more information on how to use this endpoint.\n",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "collectionId": "76a0905244eb92229e72344c03d5ce5b",
             "rawModeData": ""
         },
         {
-            "id": "de29ab7e1a2276c4e6fc815c5849b251",
+            "id": "7e799b9c815d56389405a2405557a9cb",
             "name": "POST gettoken",
             "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/gettoken",
             "description": "Exchange an authorization code extracted from a GET authorize callback for a three-legged access token.\n",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "collectionId": "76a0905244eb92229e72344c03d5ce5b",
             "rawModeData": ""
         },
         {
-            "id": "4218080712c4808cc3044698eed398b0",
+            "id": "684722f6e8ecd3e91a07c6c8af20f7c3",
             "name": "POST refreshtoken",
             "url": "http:\/\/developer.api.autodesk.com\/\/authentication\/v1\/refreshtoken",
             "description": "Acquire a new access token by using the refresh token provided by the POST gettoken endpoint.\nSee the Field Guide for more information about refresh tokens.\n",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "collectionId": "76a0905244eb92229e72344c03d5ce5b",
             "rawModeData": ""
         },
         {
-            "id": "3487a3a7483665f5b8787a1e23432656",
+            "id": "026e3f992f0c27b4141b4e2660fc798f",
             "name": "GET users\/@me",
             "url": "http:\/\/developer.api.autodesk.com\/\/userprofile\/v1\/users\/@me",
             "description": "GET users\/@me",
@@ -153,7 +153,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8406960bd6fadee1f320c325a5075ff6",
+            "collectionId": "76a0905244eb92229e72344c03d5ce5b",
             "rawModeData": ""
         }
     ]
