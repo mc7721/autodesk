@@ -9,8 +9,8 @@
         "models",
         "social"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/autodesk\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -28,11 +28,7 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/forgeoauth2-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/forgeoauth2-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/autodesk\/master\/forgeoauth2-openapi.json"
                 }
             ]
         },
@@ -50,11 +46,7 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/bim360-docs-v2-api-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/bim360-docs-v2-api-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/autodesk\/master\/bim360-docs-v2-api-openapi.json"
                 }
             ]
         },
@@ -72,17 +64,17 @@
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/forgedatamanagement-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/forgedatamanagement-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/autodesk\/master\/forgedatamanagement-openapi.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Website",
             "url": "http:\/\/bim360.autodesk.com\/api\/"
